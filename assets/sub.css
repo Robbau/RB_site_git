@@ -1,0 +1,175 @@
+/* SUB CSS FILE
+Css for sub pages as projects / blog go in here
+-------------------------------------*/
+
+
+/* PROJECT PAGE
+-------------------------------------*/
+
+
+/* Grid
+-------------------------------------*/
+.projectContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.projectGrid{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    display: grid ;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 200px);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    align-items: start;
+    justify-items: start;
+    justify-content: start;
+    z-index: 10;
+    max-width: 1200px;
+}
+
+.motivation { grid-area: 1 / 1 / 4 / 8;}
+.pictures1 { grid-area: 3 / 7 / 9 / 13; }
+.description1 { grid-area: 7 / 2 / 9 / 7; }
+.description2 { grid-area: 10 / 2 / 13 / 7; }
+.pictures2 { grid-area: 10 / 8 / 15 / 13; }
+.description3 { grid-area: 16 / 2 / 17 / 7; }
+.pictures3 { grid-area: 19 / 2 / 22 / 13; }
+.projectLine{ grid-area: 7 / 1 / 19 / 2;}
+
+/* Containers
+-------------------------------------*/
+
+.projectMotivatonWrapper{
+    justify-content: left;
+    align-items: left;
+    padding: 50px 0 120px 0;
+}
+
+.projectMotivation{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    color: rgb(245,247,247);
+    background-color: rgb(80,60,155);
+    border-radius: 5px;
+    padding: 40px 40px 40px 40px !important;
+
+}
+.projectGrid img{
+    width: auto;
+    height: auto;
+    display: block;
+}
+.textBlock{
+    width: 100%;
+    padding: 20px 0px 20px 0px;    
+}
+.textBlock h1{
+    padding-bottom: 50px;
+}
+
+.projectGrid div{
+    padding: 70px 0px 70px 0px;
+}
+.pictures2 img{
+    padding-bottom: 40px;
+}
+
+.projectGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    
+    .pic1 { grid-area: 1 / 1 / 2 / 2; }
+    .pic2 { grid-area: 1 / 2 / 2 / 3; }
+    .pic3 { grid-area: 2 / 3 / 3 / 4; }
+    .pic4 { grid-area: 2 / 2 / 3 / 3; }
+
+
+.projectLine{
+    border-left: 3px solid grey;
+    height: 100%;
+    padding: 30px;
+}
+
+/* MEDIA QUERIES
+-------------------------------------*/
+
+
+@media all and (min-width: 1024px) { 
+    html{font-size: 16px;}
+
+    nav ul li a{        
+        color: rgb(20,20,20) ;
+    }
+}
+ 
+@media all and  (max-width: 1024px) { 
+    html{font-size: 16px;}
+
+    #headerBackground{
+        display: none;
+    }
+    nav ul li a{        
+        color: rgb(20,20,20) ;
+    }
+    .textBlock{
+        width: 70%;
+        padding: 50px 0 50px 0;
+    }
+
+    .projectGrid{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        z-index: 1;
+    }
+    .motivation{
+        width: 70%;
+        align-self: flex-end;
+        align-items: flex-end;
+    }
+    .pictures2 img{
+        padding-bottom: 40px;
+    }
+
+}
+
+
+@media all and  (max-width: 768px) {
+    html{font-size: 14px;}
+    nav{
+        padding: 30px 30px 0 0  ;
+    }
+    .projectLine{
+        display: none;
+    }
+}
+ 
+ @media all and  (max-width: 480px) {
+    html{font-size: 14px;}
+
+    h2{
+         font-size: 2em ;
+     }
+    .projectGrid{
+        display: flex ;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+    .motivation{
+        width: 100%;
+    }
+ }
