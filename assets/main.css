@@ -30,6 +30,7 @@ h1, h2, h3, h4 {
     font-style: normal;
     font-weight: normal;
     text-align: left;
+    float: left;
     padding-bottom: 10px;
 }
 p{  font-size: 1em; 
@@ -292,7 +293,7 @@ nav li{
     align-items: left;
     justify-content: left;
     width: 100vw;
-    padding: 0px 0px 120px 0px;
+    padding: 0px 0px 0 0px;
     background-color: #F2F2F2 ;
     border: none ;
     outline: none ;
@@ -306,6 +307,13 @@ nav li{
     width: 40%;
     align-self: center;
     border: 2px solid lightgray;
+}
+.projectSlider img{
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    padding: 80px 30px 30px 0;
+    opacity: 0.2;
 }
 .sliderContent{
     display: flex;
@@ -485,8 +493,8 @@ nav li{
     }
     
     #welcome1 { grid-area: 1 / 1 / 5 / 9; }
-    #welcome2 { grid-area: 12 / 6 / 17 / 13;}
-    #portrait { grid-area: 7 / 4 / 12 / 13; }
+    /* #welcome2 { grid-area: 12 / 6 / 17 / 13;} */
+    #portrait { grid-area: 5 / 4 / 12 / 13; }
 
 .aboutTitle{
     padding: 10% 2% 10% 2%;
@@ -495,7 +503,7 @@ nav li{
 #cv{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     background-color: rgb(42, 116, 100) ;
     border-radius: 10px;
 }
@@ -514,7 +522,7 @@ nav li{
     border-right: 2px solid rgb(245,247,247);
     align-self: flex-end;
     align-items: flex-end;
-    text-align: right;
+    text-align: left;
 }
 .left{
     border-left: 2px solid rgb(245,247,247);
