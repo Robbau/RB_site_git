@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow_36</title>
+    <g id="arrow_36" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="keyboard_arrow_down-24px" transform="translate(6.000000, 11.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M4.24,1.58 L12,9.34 L19.76,1.58 C20.54,0.8 21.8,0.8 22.58,1.58 C23.36,2.36 23.36,3.62 22.58,4.4 L13.4,13.58 C12.62,14.36 11.36,14.36 10.58,13.58 L1.4,4.4 C0.62,3.62 0.62,2.36 1.4,1.58 C2.18,0.82 3.46,0.8 4.24,1.58 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
