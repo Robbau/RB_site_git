@@ -33,7 +33,7 @@ Css for sub pages as projects / blog go in here
     max-width: 1200px;
 }
 
-.motivation { grid-area: 1 / 1 / 4 / 8;}
+.projectDescription { grid-area: 1 / 1 / 4 / 10;}
 .pictures1 { grid-area: 3 / 7 / 9 / 13; }
 .description1 { grid-area: 7 / 2 / 9 / 7; }
 .description2 { grid-area: 10 / 2 / 13 / 7; }
@@ -41,11 +41,28 @@ Css for sub pages as projects / blog go in here
 .description3 { grid-area: 16 / 2 / 17 / 7; }
 .pictures3 { grid-area: 19 / 2 / 22 / 13; }
 .projectLine{ grid-area: 7 / 1 / 19 / 2;}
+.projectGrid hr{grid-area: 23 / 3 / 24 / 10;}
 
 /* Containers
 -------------------------------------*/
 
-.projectMotivatonWrapper{
+.projectDescription{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 50%;
+    margin-bottom: -150px;
+}
+.projectDescription h6{
+    float: left;
+    display: block;
+    width: 120px;
+    color: darkgray;
+}
+
+/* .projectMotivatonWrapper{
     justify-content: left;
     align-items: left;
     padding: 50px 0 120px 0;
@@ -60,7 +77,7 @@ Css for sub pages as projects / blog go in here
     border-radius: 5px;
     padding: 40px 40px 40px 40px !important;
 
-}
+} */
 .projectGrid img{
     width: auto;
     height: auto;

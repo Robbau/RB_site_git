@@ -29,12 +29,17 @@ h1, h2, h3, h4 {
     font-family: 'AmerigoBT', Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: normal;
+    text-align: left;
+    padding-bottom: 10px;
 }
 p{  font-size: 1em; 
-    line-height: 1.2em;}
-h1{ font-size: 3.375em;
-        line-height: 1.3;}
-h2{ font-size: 2.825em;
+    line-height: 1.2em;
+    padding-bottom: 10px;    
+    text-align: left;}
+
+h1{ font-size: 5.0em;
+        line-height: 1.4;}
+h2{ font-size: 3.325em;
         line-height: 1.4;}
 h3{ font-size: 2em;
     line-height: 1.2;
@@ -44,21 +49,26 @@ h4{ font-size: 1.6em;
     line-height: 1.2;
 }
 
+h5, h6 {
+    font-family: 'Helvetica','Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;    
+    line-height: 1.2em;
+    text-align: left;
+}
+
 h5{ font-size: 1.375em;
-    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
 h6{ font-size: 1em;
-    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 p{
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
+    display: block;
 }
 
 a{  color: black;
@@ -87,13 +97,13 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     background-color: white;
-    color: #383838;
+    color: #2A292B;
 }
 
 /* Header 
@@ -140,7 +150,7 @@ nav ul{
 }
 nav li{
     display: inline-block;
-    padding: 10px 7px 10px 7px;
+    padding: 0px 7px 0px 7px;
 }
 
 /* All Parallax in here 
@@ -250,12 +260,14 @@ nav li{
     box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
 }
 
-#projectsBackground{
+#projectsWrapper{
     background-color: #F6F4F4; 
+    color: #383838 !important;
     width: 100vw;
     display: flex;
+    align-self: center;    
+    flex-direction: column;
     align-items: center;
-    align-self: center;
     justify-content: center;
     top: 0;
     left: 0;
@@ -271,15 +283,57 @@ nav li{
 }
 
 /* Index Projects Section*/
+
+
+.projectSlider{
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    align-items: left;
+    justify-content: left;
+    width: 100vw;
+    padding: 0px 0px 120px 0px;
+    background-color: #F2F2F2 ;
+    border: none ;
+    outline: none ;
+}
+.projectSlider:hover {
+    background-color: #E7E7E7;
+    cursor: pointer;
+  }
+.projectSlider hr{
+    margin: 0  !important;
+    width: 40%;
+    align-self: center;
+    border: 2px solid lightgray;
+}
+.sliderContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #F2F2F2;
+    top: 0;
+    padding: 0px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    z-index: 0;
+}
+.projectSlider h1{
+    padding: 0 10% 0 10%;
+}
+  
+
 #projectCardWrapper{
     display: flex;
     align-self: center;    
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 60%;
     max-width: 1000px;
-    margin-top: 10vhp;
+    margin-top: 10vh;
     
     z-index: 1;
 }
@@ -506,9 +560,7 @@ nav li{
         display: block !important;
         z-index: 2;
     }
-    nav{
-        padding: 20px 30px 0 0  !important;
-    }
+    
     nav ul li a{        
         color: rgb(20,20,20) ;
     }
@@ -624,6 +676,4 @@ nav li{
      /* #hider{
         top: 120vh;
     } */
-    #projectCardWrapper{
-    }
  }
