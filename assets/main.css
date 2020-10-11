@@ -51,7 +51,7 @@ h4{ font-size: 1.6em;
 }
 
 h5, h6 {
-    font-family: 'Helvetica','Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 10px;    
     line-height: 1.2em;
     text-align: left;
@@ -63,6 +63,7 @@ h5{ font-size: 1.375em;
 }
 h6{ font-size: 1em;
     font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 p{
@@ -262,7 +263,7 @@ nav li{
 }
 
 #projectsWrapper{
-    background-color: #F6F4F4; 
+    background-color: #FFFFFF; 
     color: #383838 !important;
     width: 100vw;
     display: flex;
@@ -299,8 +300,10 @@ nav li{
     outline: none ;
 }
 .projectSlider:hover {
-    background-color: #E7E7E7;
+    /* background-color: #E7E7E7; */
     cursor: pointer;
+    text-decoration: underline;
+    opacity: 1;
   }
 .projectSlider hr{
     margin: 0  !important;
@@ -313,7 +316,10 @@ nav li{
     height: 50px;
     align-self: flex-end;
     padding: 80px 30px 30px 0;
-    opacity: 0.2;
+    opacity: 0.5;
+}
+.projectSlider img:hover{
+    opacity: 1;
 }
 .sliderContent{
     display: flex;
