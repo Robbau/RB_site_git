@@ -690,7 +690,15 @@ nav li{
      h2{
          font-size: 2em ;
      }
+<<<<<<< HEAD
      #logo{
          display: none !important;
      }
+=======
+     /* #hider{
+        top: 120vh;
+    } */
+    
+    
+>>>>>>> master
  }
