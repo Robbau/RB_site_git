@@ -33,10 +33,7 @@ h1, h2, h3, h4 {
     float: left;
     padding-bottom: 10px;
 }
-p{  font-size: 1em; 
-    line-height: 1.2em;
-    padding-bottom: 10px;    
-    text-align: left;}
+
 
 h1{ font-size: 5.0em;
         line-height: 1.4;}
@@ -67,10 +64,15 @@ h6{ font-size: 1em;
 }
 
 p{
+    font-size: 1em; 
+    line-height: 1.4em;
+    padding-bottom: 10px;    
+    text-align: left;
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     display: block;
+    z-index: 2;
 }
 
 a{  color: black;
@@ -81,17 +83,27 @@ hr{
     width: 100%;
 }
 img{
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 120% !important;
+    max-height: 120% !important;
+    z-index: 1;
+}
+th, td{
+    color: grey;
+    padding-top: 12px;
+    padding-right: 24px;
+    vertical-align: top;
+}
+table{
+    margin: 20px;
 }
 .caption{
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.7em;
     margin: 20px 0 20px 0;
 }
-
+video{
+    max-width: 100%;
+}
 
 body{
     width: 100%;
@@ -119,9 +131,8 @@ body{
     margin: 0;
     top: 0;
     left:0;
-    padding: 0;
     z-index: 3;
-    padding: 40px 0 0 0;
+    padding: 30px 0 0 0;
 
 }
 #headerBackground{
@@ -152,13 +163,13 @@ nav ul{
 }
 nav li{
     display: inline-block;
-    padding: 0px 7px 0px 7px;
+    padding: 0px 4px 0px 4px;
 }
 
 /* All Parallax in here 
 -------------------------------------*/
 
-/* .parallax{
+ .parallax{
     top: 0;
     perspective: 20px;
     height: 100vh;
@@ -172,6 +183,7 @@ nav li{
     overflow-y: auto;
 
 }
+/*
 .back{
     transform: translateZ(-5px) scale(1.35);
 }
@@ -191,7 +203,8 @@ nav li{
     align-items: center;
     flex-direction: column;
     margin: 160px 0 0 0;
-    padding: 0 0px 0 0px ;
+    padding: 0 16px 0 16px ;
+    /* width: 100vw; */
 }
 
 #titleParent {
@@ -307,9 +320,9 @@ nav li{
   }
 .projectSlider hr{
     margin: 0  !important;
-    width: 40%;
+    width: 100%;
     align-self: center;
-    border: 2px solid lightgray;
+    border: 1px solid lightgray;
 }
 .projectSlider img{
     width: 50px;
@@ -328,12 +341,17 @@ nav li{
     align-content: center;
     background-color: #F2F2F2;
     top: 0;
-    padding: 0px;
-    width: 100%;
     max-height: 0;
     overflow: hidden;
+    width: 100vw;
     transition: max-height 0.2s ease-out;
     z-index: 0;
+}
+.sliderContent div {
+    margin: 12px 0 12px 0;
+}
+.sliderContent img{
+    margin: 12px 0 12px 0;
 }
 .projectSlider h1{
     padding: 0 10% 0 10%;
@@ -486,7 +504,7 @@ nav li{
 
 
 .aboutOpener {
-    display: grid;
+    display: ;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 140px);
     grid-column-gap: 20px;
@@ -605,10 +623,6 @@ nav li{
 @media all and  (max-width: 768px) {
     html{font-size: 14px;}
     
-    
-    /* .content{
-        margin-top: 40px ;
-    } */
     #titleParent{
         width: 100%;
         display: block ;
@@ -621,9 +635,7 @@ nav li{
     #title3{
         display: none;
     }
-    /* #hider{
-        top: 230vh;
-    } */
+    
     .cardImages img{
         max-width: 100% ;
     }
@@ -665,21 +677,12 @@ nav li{
         padding-top: 0;
     
     }
-    /* .parallax{
-        perspective: 0;
-    } */
-    /* .back{
-        transform: translateZ(0) scale(1.0);
-    }
-    .back2{
-        transform: translateZ(0) scale(1.0);
-    } */
     .hvr-underline-reveal:before{
         height: 0px;
     }
-    /* #hider{
-        height: 550% !important;
-    } */
+    h1{
+        font-size: 36px;
+    }
 
     }
  
@@ -687,7 +690,7 @@ nav li{
      h2{
          font-size: 2em ;
      }
-     /* #hider{
-        top: 120vh;
-    } */
+     #logo{
+         display: none !important;
+     }
  }

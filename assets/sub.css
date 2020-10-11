@@ -17,23 +17,50 @@ Css for sub pages as projects / blog go in here
     margin-top: 100px;
 }
 
-.projectGrid{
-    margin: 0;
-    padding: 0;
+.projectWrapper{
     top: 0;
-    display: grid ;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(20, 200px);
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-    align-items: start;
-    justify-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-items: flex-start;
+    justify-content: flex-start;
     z-index: 10;
-    max-width: 1200px;
+    width: 100vw;
+    max-width: 1300px;
+}
+.projectWrapper img{
+    max-width: 100%;
+}
+.projectWrapper p{    
+    max-width: 380px;
+    min-width: 280px;
+    margin: 36px;
+}
+.itemLeft{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.itemRight{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+}
+.itemCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
-.projectDescription { grid-area: 1 / 1 / 4 / 10;}
+
+/* .projectDescription { grid-area: 1 / 1 / 4 / 10;}
 .pictures1 { grid-area: 3 / 7 / 9 / 13; }
 .description1 { grid-area: 6 / 1 / 8 / 6; }
 .description2 { grid-area: 10 / 2 / 13 / 7; }
@@ -41,12 +68,13 @@ Css for sub pages as projects / blog go in here
 .description3 { grid-area: 16 / 2 / 17 / 7; }
 .pictures3 { grid-area: 19 / 2 / 22 / 13; }
 .projectLine{ grid-area: 7 / 1 / 19 / 2;}
-.projectGrid hr{grid-area: 23 / 3 / 24 / 10;}
+.projectGrid hr{grid-area: 23 / 3 / 24 / 10;} */
 
 /* Containers
 -------------------------------------*/
 
 .projectDescription{
+    max-width: 480px;;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -160,6 +188,11 @@ Css for sub pages as projects / blog go in here
     .pictures2 img{
         padding-bottom: 40px;
     }
+    .projectWrapper p{    
+        max-width: 300px;
+        /* padding: 7vw !important; */
+    }
+    
 
 }
 
@@ -167,14 +200,36 @@ Css for sub pages as projects / blog go in here
 @media all and  (max-width: 768px) {
     html{font-size: 14px;}
     nav{
-        padding: 30px 30px 0 0  ;
+        padding: 0 0 0 0  ;
     }
     .projectLine{
         display: none;
     }
+
+    .projectDescription{
+        width: 100%;;
+    }
+    .projectWrapper{
+        width: 90vw !important;
+        justify-content: center !important;
+        align-items: center !important;
+        justify-items: center !important;
+    }
+    .projectWrapper div{
+        margin: 5vh !important;
+        flex-direction: column !important;
+    }
+    .projectWrapper p{
+        margin: 5vh !important;
+    }
+    
+
 }
  
  @media all and  (max-width: 480px) {
+    img{
+        max-width: 100% !important;
+    }
     html{font-size: 14px;}
 
     h2{
@@ -189,4 +244,25 @@ Css for sub pages as projects / blog go in here
     .motivation{
         width: 100%;
     }
+    
+    .projectWrapper{
+        /* width: 90vw !important; */
+        justify-content: center !important;
+        align-items: center !important;
+        justify-items: center !important;
+    }
+    .projectWrapper div{
+        justify-content: center !important;
+        align-items: center !important;
+        justify-items: center !important;
+        margin: 0 0 0 0 !important;
+    }
+    
+    .projectWrapper p{    
+        max-width: 100%;
+        margin: 5vh 0 5vh 0 !important;
+
+        /* padding: 7vw !important; */
+    }
+
  }
