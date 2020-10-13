@@ -344,6 +344,7 @@ nav li{
     max-height: 0;
     overflow: hidden;
     width: 100vw;
+    margin: 0;
     transition: max-height 0.2s ease-out;
     z-index: 0;
 }
@@ -504,7 +505,6 @@ nav li{
 
 
 .aboutOpener {
-    display: ;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 140px);
     grid-column-gap: 20px;
@@ -629,9 +629,7 @@ nav li{
 
     }
     
-    #title2{
-        display: none;
-    }
+    
     #title3{
         display: none;
     }
@@ -690,15 +688,8 @@ nav li{
      h2{
          font-size: 2em ;
      }
-<<<<<<< HEAD
+
      #logo{
          display: none !important;
      }
-=======
-     /* #hider{
-        top: 120vh;
-    } */
-    
-    
->>>>>>> master
- }
+    }
