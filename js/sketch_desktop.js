@@ -2,7 +2,7 @@
 
 
 function setup(){
-    let myHeight = windowHeight * 2.5;
+    let myHeight = windowHeight ;
     let myWidth = windowWidth;
     let cnv = createCanvas( myWidth , myHeight);
     cnv.parent('processingHolder');
@@ -20,10 +20,10 @@ function mouseMoved(){
         ellipseSize = 120;
       }
       strokeWeight(2);
-    // stroke(42, 116, 100);
-    // noFill();
-      fill(42, 116, 100, 255);
-      noStroke();
+      stroke(42, 116, 100);
+      noFill();
+      // fill(42, 116, 100, 255);
+      // noStroke();
       ellipse(mouseX, mouseY, ellipseSize, ellipseSize);
   } 
 }

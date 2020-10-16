@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="./assets/reset.css">
 	<link rel="stylesheet" href="./assets/main.css">
 	<link rel="stylesheet" href="./assets/sub.css">
+	<link href="assets/hamburgers.css" rel="stylesheet">
+
 	<link rel="icon" type="image/png" href="content/elements/fav_01.png" sizes="96x96">
 
 	<script src="./js/main.js" async defer></script>
@@ -17,24 +19,25 @@
 
 </head>
 <body>
-	
+
 	<div id="header">
-
 			<div id="logo">
-				<h6 style="align-self: flex-start; padding-left: 40px">Robin Baudisch</h6>
+				<h6>Robin Baudisch</h6>
 			</div>		
-			<nav style="align-self: flex-end; padding-right: 40px;">
-			<ul>
-				<li id="navItem1" class="hvr-underline-reveal"><a href="index.html" ><h6>Work</h6></a></li>
-				<li id="navItem2" class="hvr-underline-reveal"><a href="about.html" ><h6>About</h6></a></li>
-				<li id="navItem3" class="hvr-underline-reveal"><a href="mailto:mail@robbau.de"><h6>E-Mail</h6></a></li>
-				<li><a href="https://www.linkedin.com/in/robin-baudisch-7a455619b/"><img style="width: 32px; margin-top: -8px;" src="content/elements/icons8-linkedin.png" alt=""></a></li>
-			</ul>
-		</nav>		
+			<button class="hamburger hamburger--squeeze " type="button">
+				<span class="hamburger-box">
+				  <span class="hamburger-inner"></span>
+				  <span class="hamburger-inner"></span>
+				  <span class="hamburger-inner"></span>
+				</span>
+			</button>		
 	</div>
-
-	<div id="headerBackground">
-	</div>
+	<nav class="navigation">
+		<div class="navItem" class="hvr-underline-reveal"><a href="index.html" ><h6>Work</h6></a></div>
+		<div class="navItem" class="hvr-underline-reveal"><a href="about.html" ><h6>About</h6></a></div>
+		<div class="navItem" class="hvr-underline-reveal"><a href="mailto:mail@robbau.de"><h6>E-Mail</h6></a></div>
+		<!-- <li><a href="https://www.linkedin.com/in/robin-baudisch-7a455619b/"><img style="width: 32px; margin-top: -8px;" src="content/elements/icons8-linkedin.png" alt=""></a></li> -->			
+	</nav>
 
 	
 	<div class="parallax" class="center">
@@ -44,25 +47,27 @@
 		<!-- Titles -->
 			<div id="titleParent" >
 				<div id="title1" class="title">
-					<h2>Hi, I´m Robin a Product Designer helping people enjoy their digital life..</h2>
+					<h1>I design for products and services.</h1>
 				</div>
 				<div id="title2" class="title">
-					<h2>...I do Interaction design, UI/ UX as well as industrial design. </h2> 
+					<h2>With a background in human-computer-interaction and industrial design I strive for making products and service more valuable and enjoyable for the user. </h2> 
 				</div>
 					
 			</div>
 			
 		<!-- Project Section -->
 
-		<h6 style=" top: -40px; padding: 40vh 0 20px 60px; color:#8F8D8B; align-self: flex-start; z-index: 2; font-weight: 100;">Selected Work</h6>
+		<h6 style=" top: -40px; padding: 40vh 0 20px 2vw; color:#8F8D8B; align-self: flex-start; z-index: 2; font-weight: 100;">Selected Work</h6>
 
 
 
 <!--First Project----------------------------------------- -->
 
 			<button type="button" value="" class="projectSlider">
-				<h1 style="padding-top: 120px;">Redesign of an application for tenant - property manager interaction.</h1>
-				<img src="content/elements/arrow_down.svg" alt="" width="40px">
+				<div class="sliderTitle">
+					<h5>Casavi Tenant App</h5>
+					<h2>Redesign of an application for tenant - house manager interaction. </h2>
+				</div> 				<img src="content/elements/arrow_down.svg" alt="" width="40px">
 			</button>
 			<div class="sliderContent">
 
@@ -130,8 +135,10 @@
 
 			<button type="button" value="" class="projectSlider">
 				<hr>
-				<h1 style="padding-top: 120px;">Visually Impaired Shopping Experience</h1>
-				<img src="content/elements/arrow_down.svg" alt="" width="40px">
+				<div class="sliderTitle">
+					<h5>Shopping Friend</h5>
+					<h2>Research in the field of visually impaired shopping and assistive technology.</h2>
+				</div> 				<img src="content/elements/arrow_down.svg" alt="" width="40px">
 			</button>
 			<div class="sliderContent">
 
@@ -218,7 +225,10 @@
 
 			<button type="button" value="" class="projectSlider">
 				<hr>
-				<h1 style="padding-top: 120px;">An application to help elderly stay in contact with relatives and friends.</h1> 
+				<div class="sliderTitle">
+					<h5>Bridge</h5>
+					<h2>Encourage the use of digital media within an aging community.</h2>
+				</div> 
 				<img src="content/elements/arrow_down.svg" alt="" width="40px">
 
 			</button>
@@ -299,10 +309,13 @@
 				
 
 
-			<div style="display: flex; flex-direction: column; margin: 40vh 0 45vh 0 ; z-index: 3;">				
-				<h2 style="margin: 10vh 0 10vh 0;">and much more</h2>	
-				<img src="content/projects/other_projects_reel_notext.gif" alt="Showreel showing a series of other projects.">
+			<div style="display: flex; flex-direction: column; margin: 30vh 0 10vh 0 ; z-index: 3;">				
+				<h2 style="margin: 10vh 0 10vh 0;">other projects</h2>	
+				<img style="width: 60vw;" src="content/projects/other_projects_reel_notext.gif" alt="Showreel showing a series of other projects.">
+				<a href="https://www.linkedin.com/in/robin-baudisch-7a455619b/"><img style="width: 32px; display: flex; align-self: flex-end; margin: 48px 0 24px 8px;" src="content/elements/icons8-linkedin.png" alt="Linkedin Icon"></a>	
+
 			</div>
+
 		</div>
 	</div>	
 		

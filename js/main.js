@@ -12,3 +12,18 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+// Look for .hamburger
+var hamburger = document.querySelector(".hamburger");
+var hamburgerContent = document.querySelector("#header");
+var navigation = document.querySelector(".navigation");
+// On click
+hamburger.addEventListener("click", function() {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  // Do something else, like open/close menu
+  hamburgerContent.classList.toggle("active");
+  navigation.classList.toggle("activeNav");
+
+
+});

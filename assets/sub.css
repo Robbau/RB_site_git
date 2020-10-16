@@ -83,12 +83,7 @@ Css for sub pages as projects / blog go in here
     width: 50%;
     margin-bottom: -150px;
 }
-.projectDescription h6{
-    float: left;
-    display: block;
-    width: 120px;
-    color: darkgray;
-}
+
 
 /* .projectMotivatonWrapper{
     justify-content: left;
