@@ -79,10 +79,7 @@ p{
 
 a{  color: black;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column !important;}
+}
 hr{ 
     border-top: solid grey 1px;
     margin: 40px 0 40px 0;
@@ -183,6 +180,13 @@ body{
 .navigation hr{
     display: none;
 }
+.navigation a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;
+}
+
 
 nav{
     /* position: fixed; */
@@ -353,6 +357,12 @@ nav li{
     -moz-box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
     box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
 }
+#moreProjectsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #moreProjectsWrapper img{
     width: 40vw;
 }
@@ -371,6 +381,7 @@ nav li{
     background-color: #F2F2F2 ;
     border: none ;
     outline: none ;
+    z-index: 4;
 }
 .sliderTitle{
     padding: 10vh 10% 0 10%;
@@ -387,8 +398,7 @@ nav li{
     border: 1px solid lightgray;
 }
 .projectSlider img{
-    width: 50px;
-    height: 50px;
+    
     align-self: flex-end;
     padding: 5vh 30px 30px 0;
     opacity: 0.5;
