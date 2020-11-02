@@ -78,7 +78,11 @@ p{
 }
 
 a{  color: black;
-    text-decoration: none;}
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;}
 hr{ 
     border-top: solid grey 1px;
     margin: 40px 0 40px 0;
@@ -176,6 +180,9 @@ body{
     height: 72px;
     margin-right: 5vw;
 }
+.navigation hr{
+    display: none;
+}
 
 nav{
     /* position: fixed; */
@@ -213,6 +220,7 @@ nav li{
     justify-content: center;
     flex-direction: column !important;
 }
+
 
 /* All Parallax in here 
 -------------------------------------*/
@@ -261,7 +269,7 @@ nav li{
     padding: 5vh 0 0 0;
     top: 0;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 30vh);
     grid-column-gap: 20px;
     grid-row-gap: 0px;
     max-width: 1200px;
@@ -273,8 +281,14 @@ nav li{
     z-index: 1;
     }
     
-#title1 { grid-area: 1 / 1 / 3 / 11; }
-#title2 { grid-area: 4 / 4 / 7 / 14; }
+#title1 { 
+    grid-area: 1 / 1 / 3 / 11; 
+    z-index: 3;
+}
+#title2 { 
+    grid-area: 4 / 4 / 8 / 14; 
+    z-index: 3;
+}
 
 
 
@@ -282,7 +296,7 @@ nav li{
 -------------------------------------*/
 
 
-#processingHolder{
+/* #processingHolder{
     position: absolute;
     width: 100%;
     top: 0;
@@ -290,7 +304,7 @@ nav li{
     display: block;
     z-index: -1;
 
-}
+} */
 #processingReplacer{
     position: absolute;
     display: none;
@@ -338,8 +352,9 @@ nav li{
     -webkit-box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
     -moz-box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
     box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
-
-
+}
+#moreProjectsWrapper img{
+    width: 40vw;
 }
 
 /* Index Projects Section*/
@@ -664,15 +679,19 @@ nav li{
         flex-direction: column;
         align-self: center;
         align-content: center;
-        justify-content: flex-end;
+        justify-content: center;
         margin-right: 0;
         margin-top: 0;
         z-index: 2;
         height: auto;
     }
+    .navigation hr{
+        display: block;
+        border: solid #F2F2F2 1px !important;
+    }
     .navItem{
         width: 100vw;
-        margin-bottom: 24px;
+        margin: 12px 0 12px 0;
         font-size: 20px;
         padding: 0;
         display: flex;
@@ -681,6 +700,17 @@ nav li{
         justify-content: center;
         flex-direction: column !important;
     }
+    /* .navigation a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+    } */
+
+    .navigation a:active{
+        background-color: #F2F2F2;
+    }
+    
     #navTop{
         justify-content: space-between;
         display: flex;
@@ -704,7 +734,7 @@ nav li{
     }
     .active{
         display: flex !important;
-        height: 260PX !important;
+        height: 222PX !important;
     }
     .activeNav{
         display: flex !important;
@@ -715,6 +745,9 @@ nav li{
     #projectCardWrapper{
         width: 80% ;
         padding-top: 800px;
+    }
+    #moreProjectsWrapper img{
+        width: 60vw;
     }
     
 
