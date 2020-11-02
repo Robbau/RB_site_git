@@ -774,7 +774,9 @@ nav li{
     
     #titleParent{
         width: 100%;
-        display: block ;
+        display: grid ;
+        grid-template-rows: repeat(6, 15vh);
+
 
     }
     
@@ -828,7 +830,7 @@ nav li{
         height: 0px;
     }
     h1{
-        font-size: 36px;
+        font-size: 48px;
     }
 
     }
