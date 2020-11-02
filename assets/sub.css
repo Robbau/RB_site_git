@@ -222,9 +222,7 @@ Css for sub pages as projects / blog go in here
 }
  
  @media all and  (max-width: 480px) {
-    img{
-        max-width: 100% !important;
-    }
+    
     html{font-size: 14px;}
 
     h2{

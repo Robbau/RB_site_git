@@ -664,16 +664,17 @@ nav li{
         flex-direction: column;
         align-self: center;
         align-content: center;
-        justify-content: center;
+        justify-content: flex-end;
         margin-right: 0;
         margin-top: 0;
         z-index: 2;
-        height: 200px;
+        height: auto;
     }
     .navItem{
         width: 100vw;
         margin-bottom: 24px;
         font-size: 20px;
+        padding: 0;
         display: flex;
         text-align: center;
         align-items: center;
