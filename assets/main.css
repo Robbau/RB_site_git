@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
 
 h1{ font-size: 9.3em;
         line-height: 1.0;}
-h2{ font-size: 4.5em;
+h2{ font-size: 4.2em;
         line-height: 1.4;}
 h3{ font-size: 2em;
     line-height: 1.2;
@@ -860,7 +860,7 @@ nav li{
         z-index: 3;
     }
     #title2 { 
-        grid-area: 4 / 1 / 8 / 13; 
+        grid-area: 4 / 2 / 8 / 12; 
         z-index: 3;
     }
     }
