@@ -252,8 +252,8 @@ Css for sub pages as projects / blog go in here
     }
     
     .projectWrapper p{    
-        max-width: 100%;
-        margin: 5vh 0 5vh 0 !important;
+        width: 60%;
+        margin-bottom: 10vh !important;
 
         /* padding: 7vw !important; */
     }
