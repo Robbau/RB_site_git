@@ -663,9 +663,8 @@ nav li{
         display: flex ;
         z-index: 2;
         background-color: rgb(255,255,255);
-        -webkit-box-shadow: 0px 9px 18px -3px rgba(0,0,0,0.14);
-        -moz-box-shadow: 0px 9px 18px -3px rgba(0,0,0,0.14);
-         box-shadow: 0px 9px 18px -3px rgba(0,0,0,0.14);
+        -webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.15); 
+box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.15);
 
     }
    
