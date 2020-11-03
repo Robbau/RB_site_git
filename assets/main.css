@@ -828,10 +828,7 @@ nav li{
         align-items: center ;
         flex-direction: column 
     }
-    .aboutOpener img{
-        
-        margin: 0 auto;
-    }
+    
     #cv{
         width: 100% ;
         padding-top: 0;
@@ -849,6 +846,8 @@ nav li{
  @media all and  (max-width: 480px) {
      h2{
          font-size: 2em ;
-     }
-     
+    }
+    .content{
+        margin-top: 100px !important;
+    } 
     }
