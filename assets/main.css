@@ -110,6 +110,11 @@ video{
 
 body{
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: 0;
     padding: 0;
     display: flex;
@@ -137,6 +142,7 @@ body{
     margin: 0;
     top: 0;
     left:0;
+    right: 0;
     z-index: 3;
     padding: 0;
     position: fixed;
@@ -145,7 +151,7 @@ body{
     left: 0;
     top: 0;
     right: 0;
-    z-index: 3;
+    z-index: 12;
     background-color: none;
 
 
@@ -225,34 +231,6 @@ nav li{
     flex-direction: column !important;
 }
 
-
-/* All Parallax in here 
--------------------------------------*/
-
- .parallax{
-    top: 0;
-    perspective: 20px;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 0px 0 0px;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-
-}
-/*
-.back{
-    transform: translateZ(-5px) scale(1.35);
-}
-.back2{
-    transform: translateZ(-5px) scale(1.35);
-} */
-/* .front{
-    transform: translateZ(5px) scale(0.75);
-} */
 /* LANDING PAGE
 -------------------------------------*/
 /* Welcome Titles 
@@ -263,14 +241,14 @@ nav li{
     align-items: center;
     flex-direction: column;
     margin: 160px 0 0 0;
-    padding: 0 16px 0 16px ;
-    /* width: 100vw; */
+    padding: 0 0 0 0 ;
+    width: 100%;
+    background-color: white;
 }
 
 #titleParent {
     display: grid;
-    margin: 0;
-    padding: 5vh 0 0 0;
+    margin: 0 24px 0 24px;
     top: 0;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 28vh);
@@ -323,20 +301,7 @@ nav li{
     max-width: 500vh !important;
 }
 
-#hider{
-    background-color: #F6F4F4;
-    width: 100vw;
-    height: 100%;
-    top: -100vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    -webkit-box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
-    -moz-box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
-    box-shadow: 3px 7px 28px -6px rgba(0,0,0,0.36);
-}
+
 
 #projectsWrapper{
     background-color: #FFFFFF; 
@@ -429,7 +394,7 @@ nav li{
 
   
 
-#projectCardWrapper{
+/* #projectCardWrapper{
     display: flex;
     align-self: center;    
     flex-direction: column;
@@ -449,11 +414,8 @@ nav li{
     flex-direction: column;
     z-index: 1;
     padding: 70px;
-    background-color: white;
     border-radius: 5px;
-    
-    
-}
+} */
 .projectCard h1{
     margin: 30px 0 30px 0;
 }
@@ -661,11 +623,9 @@ nav li{
 
     #header{
         display: flex ;
-        z-index: 2;
         background-color: rgb(255,255,255);
         -webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.15); 
         box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.15);
-
     }
    
     .hamburger{
@@ -782,10 +742,10 @@ nav li{
     html{font-size: 14px;}
     
     #titleParent{
-        width: 100%;
+        /* width: 100%; */
         display: grid ;
         grid-template-rows: repeat(6, 15vh);
-
+        margin: 0 16px 0 16px;
 
     }
     

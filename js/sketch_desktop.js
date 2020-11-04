@@ -2,8 +2,8 @@
 
 
 function setup(){
-    let myHeight = windowWidth*0.6 ;
-    let myWidth = windowWidth*0.6 ;
+    let myHeight = windowWidth*0.5 ;
+    let myWidth = windowWidth*0.5 ;
     let cnv = createCanvas( myWidth , myHeight);
     cnv.parent('processingHolder');
     background(255, 217 ,153 );
