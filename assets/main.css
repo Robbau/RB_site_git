@@ -21,12 +21,6 @@ Css for home, about and other main pages go in here
             url("fonts/AmerigoBTbold.woff2") format("woff");
     font-weight: bold;
 }
-
-
-
-
- 
-
 h1, h2, h3, h4 {
     font-family: 'AmerigoBT', Georgia, 'Times New Roman', Times, serif ;
     font-style: normal;
@@ -35,27 +29,22 @@ h1, h2, h3, h4 {
     float: left;
     padding-bottom: 10px;
 }
-
-
-h1{ font-size: 9.3em;
-        line-height: 1.0;}
+h1{ font-size: 9.3em;       
+    line-height: 1.0;}
 h2{ font-size: 4.2em;
-        line-height: 1.4;}
+    line-height: 1.4;}
 h3{ font-size: 2em;
     line-height: 1.2;
 }
-
 h4{ font-size: 1.6em;
     line-height: 1.2;
 }
-
 h5, h6 {
     font-family: 'Barlow', Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
     text-align: left;
     font-style: 200;
 }
-
 h5{ font-size: 1.375em;
     font-style: normal;
     font-weight: normal;
@@ -107,7 +96,8 @@ table{
 video{
     max-width: 100%;
 }
-
+/* Body 
+-------------------------------------*/
 body{
     width: 100%;
     height: 100%;
@@ -119,7 +109,6 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     font-family: 'Barlow', Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
@@ -156,9 +145,6 @@ body{
 
 
 }
-
-
-
 /* Navigation 
 ------------------------------------- */
 
@@ -193,9 +179,7 @@ body{
     flex-direction: column !important;
 }
 
-
 nav{
-    /* position: fixed; */
     color: #383838;
 }
 
@@ -219,10 +203,8 @@ nav li{
     align-self: flex-start;
     justify-items: flex-start;
     height: 72px;
-
 }
 .navItem{
-    /* width: 100vw; */
     font-size: 1em;
     display: flex;
     padding-left: 16px;
@@ -233,6 +215,8 @@ nav li{
 
 /* LANDING PAGE
 -------------------------------------*/
+
+
 /* Welcome Titles 
 -------------------------------------*/
 .content{
@@ -244,6 +228,10 @@ nav li{
     padding: 0 0 0 0 ;
     width: 100%;
     background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 #titleParent {
@@ -272,36 +260,8 @@ nav li{
     z-index: 3;
 }
 
-
-
 /* Processing Eyecatcher 
 -------------------------------------*/
-
-
-/* #processingHolder{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0%;
-    display: block;
-    z-index: -1;
-
-} */
-#processingReplacer{
-    position: absolute;
-    display: none;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: -3;
-}
-#processingReplacer img{
-    height: 100%;
-    width: 280vh;
-    max-width: 500vh !important;
-}
-
-
 
 #projectsWrapper{
     background-color: #FFFFFF; 
@@ -332,8 +292,8 @@ nav li{
     width: 40vw;
 }
 
-/* Index Projects Section*/
-
+/* Index Project Section 
+-------------------------------------*/
 
 .projectSlider{
     display: flex;
@@ -391,31 +351,6 @@ nav li{
     margin: 12px 0 12px 0;
 }
 
-
-  
-
-/* #projectCardWrapper{
-    display: flex;
-    align-self: center;    
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    max-width: 1000px;
-    margin-top: 10vh;
-    
-    z-index: 1;
-}
-.projectCard{
-    margin: 200px 15px 0 15px;
-    padding: 40px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-direction: column;
-    z-index: 1;
-    padding: 70px;
-    border-radius: 5px;
-} */
 .projectCard h1{
     margin: 30px 0 30px 0;
 }
@@ -436,30 +371,6 @@ nav li{
     justify-self: right;
     max-width: 60ch;
 }
-
-/* #motivationWrapper{
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    width: 70%;
-    padding: 300px 0 100px 0;
-    z-index: 2;
-} */
-
-/* #motivation{
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-direction: column;
-    width: 50%;
-    color: rgb(245,247,247) ;
-    background-color: rgb(80,60,155);
-    border-radius: 5px;
-    padding: 40px 40px 100px 40px;
-    -webkit-box-shadow: 0px 9px 18px -3px rgba(0,0,0,0.24);
-    -moz-box-shadow: 0px 9px 18px -3px rgba(0,0,0,0.24);
-    box-shadow: 0px 9px 18px -3px rgba(0,0,0,0.24);
-} */
 
 /* HOVERS
 -------------------------------------*/
@@ -619,8 +530,6 @@ nav li{
 @media all and  (max-width: 1024px) { 
     html{font-size: 16px;}
 
-    
-
     #header{
         display: flex ;
         background-color: rgb(255,255,255);
@@ -669,13 +578,6 @@ nav li{
         justify-content: center;
         flex-direction: column !important;
     }
-    /* .navigation a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column !important;
-    } */
-
     .navigation a:active{
         background-color: #F2F2F2;
     }
@@ -730,9 +632,6 @@ nav li{
     #cv{
         width: 75% ;
     }
-    /* #hider{
-        top: 280vh ;
-    } */
 }
 
 /* Smartphone Size
@@ -778,8 +677,7 @@ nav li{
     #motivation{
         width: 100% ;
     }
-
-    /* About Page */
+  
     .aboutOpener{
         display: flex;
         justify-content: center ;
