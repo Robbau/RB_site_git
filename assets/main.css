@@ -113,7 +113,7 @@ body{
     font-style: normal;
     font-weight: normal;
     background-color: white;
-    color: #2A292B;
+    color: #212022;
 }
 
 /* Header 
@@ -616,7 +616,10 @@ nav li{
     }
     .active{
         display: flex !important;
-        /* height: 222PX !important; */
+        height: 218px !important;
+    }
+    .sliderActive{
+        display: flex !important;
     }
     .activeNav{
         display: flex !important;
