@@ -70,7 +70,7 @@ a{  color: black;
     text-decoration: none;
 }
 hr{ 
-    border-top: solid grey 1px;
+    border-top: 1px solid grey;
     margin: 40px 0 40px 0;
     width: 100%;
 }
@@ -80,7 +80,6 @@ img{
     z-index: 1;
 }
 th, td{
-    color: #B8B5C3;
     padding-top: 12px;
     padding-right: 24px;
     vertical-align: top;
@@ -263,7 +262,19 @@ nav li{
 /* Processing Eyecatcher 
 -------------------------------------*/
 
-#projectsWrapper{
+#opener{
+    top: 80vh;
+}
+.openerBack{
+    display: none;
+    background-color: #FFD999; 
+    width: 75vw;
+    height: 75vw;
+    z-index: 1;
+    margin-left: 30vw;
+}
+
+/* #projectsWrapper{
     background-color: #FFFFFF; 
     color: #383838 !important;
     width: 100vw;
@@ -290,7 +301,7 @@ nav li{
 
 #moreProjectsWrapper img{
     width: 40vw;
-}
+} */
 
 /* Index Project Section 
 -------------------------------------*/
@@ -565,7 +576,7 @@ nav li{
     }
     .navigation hr{
         display: block;
-        border: solid #F2F2F2 1px !important;
+        border: 1px solid #F2F2F2;
     }
     .navItem{
         width: 100vw;
@@ -605,7 +616,7 @@ nav li{
     }
     .active{
         display: flex !important;
-        height: 222PX !important;
+        /* height: 222PX !important; */
     }
     .activeNav{
         display: flex !important;
@@ -623,7 +634,6 @@ nav li{
     
 
     #processingHolder{
-        display: none;
         z-index: -3;
     }
     #processingReplacer{
@@ -643,7 +653,7 @@ nav li{
     #titleParent{
         /* width: 100%; */
         display: grid ;
-        grid-template-rows: repeat(6, 15vh);
+        grid-template-rows: repeat(4,140px);
         margin: 0 16px 0 16px;
 
     }
@@ -686,7 +696,7 @@ nav li{
     }
     
     #cv{
-        width: 100% ;
+        width: 90% ;
         padding-top: 0;
     
     }
@@ -700,14 +710,17 @@ nav li{
     h1{
         font-size: 88px;
     }
+    #opener{
+        top: 50vh;
+    }
     }
  
  @media all and  (max-width: 480px) {
      h2{
-         font-size: 2em ;
+         font-size: 2em !important ;
     }
     .content{
-        margin-top: 100px !important;
+        margin-top: 25vh !important;
     } 
     h1{
         font-size: 48px;
@@ -719,5 +732,13 @@ nav li{
     #title2 { 
         grid-area: 4 / 2 / 8 / 12; 
         z-index: 3;
+    }
+    
+    #processingHolder{
+        display: none !important;
+    }
+    .openerBack{
+        display: block !important;
+
     }
     }

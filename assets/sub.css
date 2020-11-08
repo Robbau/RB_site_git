@@ -82,6 +82,7 @@ Css for sub pages as projects / blog go in here
     overflow: hidden;
     width: 50%;
     margin-bottom: -150px;
+    margin-left: 10%;
 }
 
 
@@ -187,6 +188,12 @@ Css for sub pages as projects / blog go in here
         max-width: 300px;
         /* padding: 7vw !important; */
     }
+    .projectWrapper{
+        width: 90vw !important;
+        justify-content: center !important;
+        align-items: center !important;
+        justify-items: center !important;
+    }
     
 
 }
@@ -202,7 +209,7 @@ Css for sub pages as projects / blog go in here
     }
 
     .projectDescription{
-        width: 100%;;
+        width: 70%;;
     }
     .projectWrapper{
         width: 90vw !important;
