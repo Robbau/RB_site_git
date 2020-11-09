@@ -22,11 +22,11 @@ function mouseMoved(){
       strokeWeight(2);
       stroke(255, 255, 255);
       noFill();
-      // fill(42, 116, 100, 255);
-      // noStroke();
+      fill(255, 255, 255);
+      noStroke();
       ellipse(mouseX, mouseY, ellipseSize, ellipseSize);
   } 
 }
 function draw(){
-  background(255, 217, 153, 5);
+  // background(255, 217, 153, 5);
 }
