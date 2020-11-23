@@ -84,9 +84,10 @@ th, td{
     padding-top: 12px;
     padding-right: 24px;
     vertical-align: top;
+    line-height: 1.4em;
 }
 table{
-    margin: 20px;
+    margin: 36px;
 }
 .caption{
     font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
@@ -95,6 +96,7 @@ table{
 }
 video{
     max-width: 100%;
+    z-index: 1;
 }
 /* Body 
 -------------------------------------*/
@@ -366,7 +368,7 @@ nav li{
     z-index: 0;
 }
 .sliderContent div {
-    margin: 12px 0 12px 0;
+    margin: 16px;
 }
 .sliderContent img{
     margin: 12px 0 12px 0;
@@ -733,9 +735,11 @@ nav li{
     #opener{
         top: 80vh;
     }
+    
     .sliderTitle{
         padding: 10vh 8% 5vh 8%;
     }
+    
     }
  
  @media all and  (max-width: 480px) {
@@ -779,7 +783,7 @@ nav li{
         margin-left: 30vw;   
     }
     #myEmoji{
-        width: 70px; 
+        width: 70px !important; 
         margin: 10px 10px 0 10px;
     }
     }

@@ -31,7 +31,7 @@ Css for sub pages as projects / blog go in here
 }
 .projectWrapper p{    
     max-width: 380px;
-    min-width: 280px;
+    min-width: 240px;
     margin: 36px;
 }
 .itemLeft{
