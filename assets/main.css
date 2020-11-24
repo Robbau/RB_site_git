@@ -117,6 +117,8 @@ body{
     font-weight: normal;
     background-color: white;
     color: #212022;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* Header 

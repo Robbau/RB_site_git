@@ -31,7 +31,7 @@ Css for sub pages as projects / blog go in here
 }
 .projectWrapper p{    
     max-width: 380px;
-    min-width: 240px;
+    min-width: 280px;
     margin: 36px;
 }
 .itemLeft{
@@ -39,7 +39,7 @@ Css for sub pages as projects / blog go in here
     align-items: flex-start;
     justify-content: flex-start;
     justify-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
 .itemRight{
@@ -47,15 +47,15 @@ Css for sub pages as projects / blog go in here
     align-items: flex-end;
     justify-content: flex-end;
     justify-items: flex-end;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
 .itemCenter{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content: center;
     justify-items: center;
-    flex-direction: column;
     width: 100%;
 }
 
@@ -260,7 +260,7 @@ Css for sub pages as projects / blog go in here
     
     .projectWrapper p{    
         width: 6 0%;
-        margin-bottom: 10vh !important;
+        margin-bottom: 5vh !important;
 
         /* padding: 7vw !important; */
     }
