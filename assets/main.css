@@ -258,10 +258,11 @@ nav li{
     font-size: 70px;
 }
 #myEmoji{
-    width: 110px; 
+    font-size: 70px;
+    /* width: 110px; 
     margin: 10px 20px 10px 20px ; 
     z-index: 0; 
-    display: inline-block;
+    display: inline-block; */
 }
 #title1 { 
     grid-area: 1 / 1 / 4 / 13; 
@@ -785,7 +786,8 @@ nav li{
         margin-left: 30vw;   
     }
     #myEmoji{
-        width: 70px !important; 
-        margin: 10px 10px 0 10px;
+        font-size: 40px;
+        /* width: 70px !important; 
+        margin: 10px 10px 0 10px; */
     }
     }

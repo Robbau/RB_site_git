@@ -195,6 +195,30 @@ Css for sub pages as projects / blog go in here
         justify-items: center !important;
     }
     
+    .itemLeft{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+    .itemRight{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        justify-items: flex-end;
+        flex-direction: column;
+        width: 100%;
+    }
+    .itemCenter{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    }
 
 }
 
@@ -222,9 +246,7 @@ Css for sub pages as projects / blog go in here
         flex-direction: column !important;
     }
     .projectWrapper p{
-        margin: 5vh !important;
     }
-    
 
 }
  
