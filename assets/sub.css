@@ -4,7 +4,7 @@ Css for sub pages as projects / blog go in here
 
 
 /* PROJECT PAGE
--------------------------------------*/
+------------------------------------------------------------------*/
 
 
 /* Grid
@@ -16,7 +16,17 @@ Css for sub pages as projects / blog go in here
     flex-direction: column;
     margin-top: 100px;
 }
-
+.projectDescription{
+    max-width: 480px;;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 50%;
+    margin-bottom: -150px;
+    margin-left: 10%;
+}
 .projectWrapper{
     top: 0;
     align-items: flex-start;
@@ -60,90 +70,72 @@ Css for sub pages as projects / blog go in here
 }
 
 
-/* .projectDescription { grid-area: 1 / 1 / 4 / 10;}
-.pictures1 { grid-area: 3 / 7 / 9 / 13; }
-.description1 { grid-area: 6 / 1 / 8 / 6; }
-.description2 { grid-area: 10 / 2 / 13 / 7; }
-.pictures2 { grid-area: 10 / 8 / 15 / 13; }
-.description3 { grid-area: 16 / 2 / 17 / 7; }
-.pictures3 { grid-area: 19 / 2 / 22 / 13; }
-.projectLine{ grid-area: 7 / 1 / 19 / 2;}
-.projectGrid hr{grid-area: 23 / 3 / 24 / 10;} */
 
-/* Containers
--------------------------------------*/
-
-.projectDescription{
-    max-width: 480px;;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow: hidden;
-    width: 50%;
-    margin-bottom: -150px;
-    margin-left: 10%;
-}
+/* ABOUT PAGE
+--------------------------------------------------------------*/
 
 
-/* .projectMotivatonWrapper{
-    justify-content: left;
-    align-items: left;
-    padding: 50px 0 120px 0;
-}
-
-.projectMotivation{
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    color: rgb(245,247,247);
-    background-color: rgb(80,60,155);
-    border-radius: 5px;
-    padding: 40px 40px 40px 40px !important;
-
-} */
-.projectGrid img{
-    width: auto;
-    height: auto;
-    display: block;
-}
-.textBlock{
-    width: 100%;
-    padding: 20px 0px 20px 0px;    
-}
-.textBlock h1{
-    padding-bottom: 50px;
-}
-
-.projectGrid div{
-    padding: 70px 0px 70px 0px;
-}
-.pictures2 img{
-    padding-bottom: 40px;
-}
-
-.projectGallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, auto);
+.aboutOpener {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 140px);
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 0px;
+    max-width: 1300px;
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    user-select: None;
     }
     
-    .pic1 { grid-area: 1 / 1 / 2 / 2; }
-    .pic2 { grid-area: 1 / 2 / 2 / 3; }
-    .pic3 { grid-area: 2 / 3 / 3 / 4; }
-    .pic4 { grid-area: 2 / 2 / 3 / 3; }
+    #welcome1 { grid-area: 1 / 1 / 5 / 13; }
+    #portrait { grid-area: 5 / 4 / 12 / 13; }
 
-
-.projectLine{
-    border-left: 3px solid grey;
-    height: 100%;
-    padding: 30px;
+.aboutTitle{
+    padding: 0% 2% 10% 2%;
 }
 
+#cv{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 950px;
+    background-color: rgb(42, 116, 100) ;
+    border-radius: 10px;
+}
+.cvItem{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 30px;
+}
+.cvItem p{
+    width: 70%;
+    align-self: inherit;
+    align-items: inherit;
+    color: inherit;
+    font-weight: 400 ;
+}
+.right{
+    border-right: 2px solid #FFFFFF;
+    align-self: flex-end;
+    align-items: flex-end;
+    text-align: left;
+}
+.left{
+    border-left: 2px solid #FFFFFF;
+    align-self: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+
 /* MEDIA QUERIES
--------------------------------------*/
+----------------------------------------------------------------------*/
 
 
 @media all and (min-width: 1024px) { 
@@ -154,6 +146,8 @@ Css for sub pages as projects / blog go in here
     }
 }
  
+/* Small Screen Size
+---------------------------------------------------------------------- */
 @media all and  (max-width: 1024px) { 
     html{font-size: 16px;}
 
@@ -163,30 +157,8 @@ Css for sub pages as projects / blog go in here
     nav ul li a{        
         color: rgb(20,20,20) ;
     }
-    .textBlock{
-        width: 70%;
-        padding: 50px 0 50px 0;
-    }
-
-    .projectGrid{
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        align-items: flex-start;
-        justify-content: flex-start;
-        z-index: 1;
-    }
-    .motivation{
-        width: 70%;
-        align-self: flex-end;
-        align-items: flex-end;
-    }
-    .pictures2 img{
-        padding-bottom: 40px;
-    }
     .projectWrapper p{    
         max-width: 300px;
-        /* padding: 7vw !important; */
     }
     .projectWrapper{
         width: 90vw !important;
@@ -194,7 +166,6 @@ Css for sub pages as projects / blog go in here
         align-items: center !important;
         justify-items: center !important;
     }
-    
     .itemLeft{
         display: flex;
         align-items: flex-start;
@@ -219,19 +190,17 @@ Css for sub pages as projects / blog go in here
         justify-items: center;
         width: 100%;
     }
-
+    #cv{
+        width: 75% ;
+    }
 }
-
-
+/* Tablet Size
+---------------------------------------------------------------------- */
 @media all and  (max-width: 768px) {
     html{font-size: 14px;}
     nav{
         padding: 0 0 0 0  ;
     }
-    .projectLine{
-        display: none;
-    }
-
     .projectDescription{
         width: 100%;;
     }
@@ -245,28 +214,25 @@ Css for sub pages as projects / blog go in here
         margin: 5vh !important;
         flex-direction: column !important;
     }
-    .projectWrapper p{
+    .aboutOpener{
+        display: flex;
+        justify-content: center ;
+        align-items: center ;
+        flex-direction: column 
     }
-
+    #cv{
+        width: 90% ;
+        padding-top: 0;
+    }
 }
- 
+/* Phone Size
+---------------------------------------------------------------------- */
  @media all and  (max-width: 480px) {
     
     html{font-size: 14px;}
-
     h2{
          font-size: 2em ;
      }
-    .projectGrid{
-        display: flex ;
-        flex-direction: column;
-        justify-content: left;
-        align-items: left;
-    }
-    .motivation{
-        width: 100%;
-    }
-    
     .projectWrapper{
         /* width: 90vw !important; */
         justify-content: center !important;
@@ -279,12 +245,8 @@ Css for sub pages as projects / blog go in here
         justify-items: center !important;
         margin: 0 0 0 0 !important;
     }
-    
     .projectWrapper p{    
         width: 6 0%;
         margin-bottom: 5vh !important;
-
-        /* padding: 7vw !important; */
     }
-
  }
