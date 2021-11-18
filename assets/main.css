@@ -96,6 +96,7 @@ video{
     z-index: 1;
 }
 
+
 /* Body 
 --------------------------------------------------------*/
 body{
@@ -191,6 +192,10 @@ nav li{
     display: inline-block;
     padding: 0px 4px 0px 4px;
     vertical-align: top;
+}
+.underline{
+    padding: 2px;
+    border-bottom: 2px #383838 solid;
 }
 #navTop{
     display: flex;
@@ -431,6 +436,9 @@ nav li{
     }
     .navigation a:active{
         background-color: #F2F2F2;
+    }
+    .underline{
+        border-bottom: none;
     }
     
     #navTop{
