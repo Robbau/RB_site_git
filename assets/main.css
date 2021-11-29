@@ -30,9 +30,9 @@ h1, h2, h4 {
     float: left;
     padding-bottom: 10px;
 }
-h1{ font-size: 16rem;       
-    line-height: 0.82;
-    letter-spacing: -1.3rem;}
+h1{ font-size: 16vw;       
+    line-height: 0.75;
+    letter-spacing: -1.3vw;}
 
 h2{ font-size: 4.2rem;
     line-height: 1.4;}
@@ -52,21 +52,19 @@ h5, h6 {
     font-family: 'Barlow', Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
     text-align: left;
-    font-style: 200;
 }
-h5{ font-size: 1.475em;
+h5{ font-size: 1.475rem;
     letter-spacing: 1.2px;
     font-style: normal;
-    font-weight: 300
-    ;
+    font-weight: 400;
 }
-h6{ font-size: 1em;
+h6{ font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.5px;
 }
 p{
-    font-size: 1em; 
-    line-height: 1.4em;
+    font-size: 1rem; 
+    line-height: 1.4rem;
     padding-bottom: 10px;    
     text-align: left;
     font-family: 'Barlow', Verdana, Geneva, Tahoma, sans-serif;
@@ -92,13 +90,13 @@ th, td{
     padding-top: 12px;
     padding-right: 24px;
     vertical-align: top;
-    line-height: 1.4em;
+    line-height: 1.4rem;
 }
 table{
     margin: 36px;
 }
 .caption{
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin: 20px 0 20px 0;
 }
 video{
@@ -133,64 +131,38 @@ body{
 /* Header 
 ----------------------------------------------------------*/
 #header{
+    top: 0;
+    left:0;
+    right: 0;
+    height: 96px;
     display: flex;
     flex-direction: row;
     align-items: inherit;
     align-self: center;
     justify-content: space-between;
-    height: 80px;
     width: 100%;
     margin: 40px;
-    top: 0;
-    left:0;
-    right: 0;
-    z-index: 3;
-    padding: 0;
     z-index: 12;
 }
 
 /* Head Navigation 
 --------------------------------------------------------- */
-
-#logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-self: flex-start;
-    margin-left: 5vw;
-    align-items: center;
-    height: 100%;
-    max-height: 72px;
-    z-index: 3;
-
-}
-.navigation{
-    display: flex;
-    align-self: flex-end !important;
-    justify-content: flex-start;
-    align-content: flex-start;
-    z-index: 4;
-    height: 72px;
-    margin-right: 5vw;
-}
-.navigation hr{
-    display: none;
-}
-.navigation a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column !important;
-}
 #navTop{
     top: 0;
     width: 100%;
-    padding: 48px 100px;
+    padding: 4vh 6.5vw;
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
     align-self: center;
     justify-items: center;
+}
+.navItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center
 }
 
 
@@ -219,22 +191,28 @@ body{
 #openerParent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 80vh 1.8fr 3fr;
+    grid-template-rows: 90vh 1.8fr 3fr;
     grid-column-gap: 24px;
     grid-row-gap: 80px;
     /* max-width:1600px; */
-    height: 320vh;
+    height: 300vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     margin: 0;
-
     }
     
     #openerMessage { 
         grid-area: 1 / 1 / 2 / 7;
-        margin: 0 100px 0 100px
+        margin: 0 6vw;
+    }
+    .openerMessageSmallText{
+        font-size: 10rem;
     }
 
     #openerPhoto { 
-        grid-area: 2 / 3 / 3 / 7; 
+        grid-area: 2 / 1 / 3 / 7; 
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;        
@@ -243,9 +221,9 @@ body{
     #openerPhoto::-webkit-scrollbar {
         display: none; /* for Chrome, Safari, and Opera */          
     }
-    
+
     #carousel{
-        padding: 4vw 4vw 4vw 40vw;
+        padding: 4vw 4vw 4vw 50vw;
         width: 110vw;
         display: flex;
         align-items: center;
@@ -262,8 +240,8 @@ body{
 
 
     #openerAboutMe { 
-        grid-area: 3 / 1 / 5 / 5; 
-        margin: 0 0 0 100px  ;
+        grid-area: 3 / 1 / 5 / 6;
+        margin: 6vw;
     }
     #openerGraphic { 
         grid-area: 3 / 5 / 5 / 7;
@@ -273,8 +251,11 @@ body{
         margin: 30vh 0 0 0;
     }
 
-#openerMessage div{
+.openerMessageLine{
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     justify-content: flex-start;
 }
 
@@ -283,71 +264,38 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 160px;
-    margin: 60px;
-    padding: 56px;}
+    min-width: 260px;
+    padding: 3vw;
+    margin: 1vw;
+}
+
 
 
 #closerParent{
     display: flex;
+    flex-direction: column;
     align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 88vw;
+    padding: 20vh 0 10vh 0 ;
+}
+#closerContentWrapper{
     width: 100%;
+}
+#myEmoji{
+    font-size: 9rem;
 }
 #buttonParent{
     display: flex;
+    align-items: flex-start;
     align-content: flex-start;
+    justify-content: flex-start;
     width: 100%;
-}
-#buttonParent div{
-    margin: 16px;
+    padding: 30vh 0 0 0 ;
 }
 
-/* #titleParent {
-    display: grid;
-    margin: 0 24px 0 24px;
-    top: 0;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 16vh);
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-    max-width: 1300px;
-    z-index: 10;
-    -ms-user-select: None;
-    -moz-user-select: None;
-    -webkit-user-select: None;
-    user-select: None;
-    z-index: 1;
-} */
-/* #title1 { 
-    grid-area: 1 / 1 / 4 / 13; 
-    z-index: 3;
-}
-#title2 { 
-    grid-area: 7 / 7 / 9 / 14; 
-    z-index: 3;
-}
-#myEmoji{
-    font-size: 70px;
-} */
-
-/* Processing Eyecatcher 
--------------------------------------*/
-
-/* #opener{
-    top: 90vh;
-}
-.openerBack{
-    display: none;
-    background-color: #FFB974; 
-    width: 75vw;
-    height: 75vw;
-    z-index: 1;
-    margin-left: 30vw;
-}
-#processingHolder{
-    background-color: #FFB974; 
-} */
-
-/* Index Project Section 
+/* Project Section 
 ----------------------------------------------------------*/
 
 .projectsContainer {
@@ -356,7 +304,7 @@ body{
     grid-template-rows: repeat(4, auto);
     grid-column-gap: 24px;
     grid-row-gap: 80px;
-    margin: 120px;
+    margin: 4vw;
     }
     
     .bigCard1 { grid-area: 1 / 1 / 2 / 3; }
@@ -365,47 +313,15 @@ body{
     .bigCard2 { grid-area: 3 / 1 / 4 / 3; }
     .div5 { grid-area: 4 / 1 / 5 / 3; }
 
+
+.projectsContainer div{
+    display: block;
+}
 .projectCaption{
     margin-top: 1.5rem;
 }
 
-/* Button
-----------------------------------------------------------*/
-.projectSlider{
-    display: flex;
-    flex-direction: column;
-    align-content: left;
-    align-items: left;
-    justify-content: left;
-    width: 100vw;
-    padding: 0 ;
-    background-color: #F2F2F2 ;
-    border: none ;
-    outline: none ;
-    z-index: 4;
-}
-.projectSlider img{
-    
-    align-self: flex-end;
-    opacity: 0.5;
-}
-.projectSlider hr{
-    margin: 0  !important;
-    width: 100%;
-    align-self: center;
-    border: 1px solid lightgray;
-}
-.projectSlider img:hover{
-    opacity: 1;
-}
-.sliderTitle{
-    padding: 10vh 15% 5vh 15%;
-}
-.sliderTitle:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    opacity: 1;
-  }
+
 
 /* Content
 ----------------------------------------------------------*/
@@ -434,217 +350,148 @@ body{
 }
 
 
-
-
-/* @media all and (min-width: 1024px) { 
-    html{font-size: 16px;}
-
-    
-    nav ul li a{        
-        color: rgb(20,20,20) ;
-    }
-    
-    #projectCardWrapper{
-        width: 80% ;
-        padding-top: 20vh;
-    }
-    #hider{
-        top: 300vh ;
-    } 
-} */
-
-/* Small Screen Size
+/* Media Query - Small Screens 1024px
 ---------------------------------------------------------------------- */
-@media all and  (max-width: 1024px) { 
-    html{font-size: 16px;}
 
-    h1{
-        font-size: 88px;
-        line-height: 1;
-        letter-spacing: -4px;
-    }
-    nav ul li a{        
-        color: rgb(20,20,20) ;
-    }
-    ul{
-        margin-top: 80px;
-        font-size: 20px;
-        display: flex;
-        justify-content: space-around;
-    }
-    #header{
- 
-    }
-
-    .navigation a:active{
-        background-color: #F2F2F2;
-    }
-    .underline{
-        border-bottom: none;
-    }
-    
-    #navTop{
-        justify-content: space-between;
-        display: flex;
-        width: 100%;
-        height: 72px;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    .hamburgerContent{
+@media all and (max-width: 1024px) { 
+    #openerParent {
+        grid-template-rows: 110vh 60vh 3fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 80px;
+        height: 280vh;
+        }   
+    #openerButton{
         display: none;
-        height: 30vh;
-        background-color: darkblue;
     }
-    .active{
-        display: flex !important;
-        height: 218px !important;
-    }
-    .sliderActive{
-        display: flex !important;
-    }
-    .activeNav{
-        display: flex !important;
-        position: fixed;
-    }
-    #projectCardWrapper{
-        width: 80% ;
-        padding-top: 800px;
-    }
-    #processingHolder{
-        z-index: -3;
-    }
-    #processingReplacer{
-        display: block;
+    #buttonParent{
+        flex-direction: column;
+        gap: 16px;
+        padding: 10vh 0 0 0 ;
     }
 }
 
-/* Tablet Size
+
+
+/* Media Query - Tablet Size
 ---------------------------------------------------------------------- */
 
-/* @media all and  (max-width: 768px) {
+@media all and  (max-width: 768px) {
+
     html{font-size: 14px;}
-    h2{
-        font-size: 2.3em ;
-   }
-   h1{
-       font-size: 88px;
-       line-height: 1;
-   }
-    #titleParent{
-        /* width: 100%; */
-        display: grid ;
-        grid-template-rows: repeat(4,140px);
-        margin: 0 16px 0 16px;
-    }
-    #projectCardWrapper{
-        width: 90% ;
-        min-width: 320px;
-    }  
-} */
- 
-/* Phone Size
----------------------------------------------------------------------- */
- @media all and  (max-width: 480px) {
-     /* h2{
-         font-size: 2.3em !important ;
-    }
+    
     h1{
-        font-size: 56px;
-        letter-spacing: -2px;
+        font-size: 9rem;
+        letter-spacing: -0.8rem;
+        line-height: 1;
     }
-    h3{ font-size: 1.8em;
-        line-height: 1.2;
+    h2{
+        font-size: 2.3rem ;
     }
-    #header{
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+
+    #navTop{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
 
     }
-
-    .content{
+    #openerParent {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1vh 2fr 3fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 80px;
+        height: 160vh;
         width: 100%;
-        margin: 0;
-    } 
-    .emoji{
-        font-size: 40px;
+        }
+    #openerAboutMe { 
+        grid-area: 3 / 1 / 5 / 7;
+        margin: 4vw;        
     }
     #myEmoji{
-        font-size: 40px;
+        font-size: 4rem;
     }
-} */
+    .bigButton{
+        min-width: 180px;
+   }
+   #openerMessage{
+       display: none;
+   }
+   #carousel{
+    padding: 0 0 0 10vw ;
+    width: 220vw;
+   }
+   
+}
+/* Media Query - Phone Size
+---------------------------------------------------------------------- */
+ @media all and  (max-width: 480px) {
+ 
+    html{font-size: 14px;}
+    
+    h1{
+        font-size: 5.5rem;
+        letter-spacing: -0.1em;
+        line-height: 1;
+    }
+    h2{
+        font-size: 1.7rem ;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    /* Navigation ----------------------------------------- */
+
+
+
+
+    /* Opener ----------------------------------------- */
+
+    #openerParent{
+        grid-template-rows: 0 50vh 50vh;
+    }
+    .openerMessageLine{
+        align-content:flex-start;
+        justify-content:flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .openerMessageSmallText{
+        font-size: 4rem;
+    }
+    .bigButton{
+        min-width: 180px;
+   }
+
+   /* Projects Section -------------------------------------- */
+
+   .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    }
+    
+    .bigCard1 { grid-area: 1 / 1 / 2 / 3}
+    .smallCard1 { grid-area: 2 / 1 / 3 / 3 !important}
+    .smallCard2 { grid-area: 3 / 1 / 4 / 3 !important}
+    .bigCard2 { grid-area: 4 / 1 / 5 / 3}
+    .bigCard3 { grid-area: 5 / 1 / 6 / 3} 
+
+
+ 
+}
 
 
 
     /* HOVERS
 -------------------------------------*/
 
-/* Rotate */
-.hvr-rotate {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
-    -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
-  }
-
-  .hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(0.5px) translateZ(0);
-    transform: perspective(0.5px) translateZ(0);
-    -webkit-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.32);
-    -moz-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.32);
-    box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.32);
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
-  }
-
- /* Underline Reveal */
-.hvr-underline-reveal {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-reveal:before {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #000000;
-  height: 3px;
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}

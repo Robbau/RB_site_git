@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="assets/reset.css">
 	<link rel="stylesheet" href="assets/main.css">
 	<link rel="stylesheet" href="assets/sub.css">
-	<link href="assets/hamburgers.css" rel="stylesheet">
 
 	<link rel="icon" type="image/png" href="content/elements/fav_01.png" sizes="96x96">
 
@@ -30,12 +29,16 @@
 <body>
 
 	<div id="header">
-
 		<div id="navTop">
-			<a href="index.html" >
-				<h5>Robin Baudisch</h5></a>		
-				<h5>UX Design @ Casavi</h5>
-				<h5>Munich, Germany</h5>	
+				<div class="navItem">
+					<h5>Robin Baudisch </h5>		
+				</div>
+				<div class="navItem" >
+					<h5>UX Design @ Casavi</h5>
+				</div>
+				<div class="navItem">
+					<h5>Munich, Germany</h5>	
+				</div>
 
 		</div>
 	</div>
@@ -50,20 +53,17 @@
 
 		<div id="openerParent">
 				<div id="openerMessage">
-				<div>
-					<h1>ideas <span style="font-size: 8rem;">&</span> values </h1>
+				<div class="openerMessageLine">
+					<h1>ideas <span class="openerMessageSmallText">&</span> values </h1>
 				</div>
 
-				<div>
-					<!-- <div class="bigButton" style="background-color: #18AF94; color:#ffffff;">
-						<h3>product desfgn</h3>
-					</div> -->
-					<h1>for products <span style="font-size: 8rem;">&</span> </h1>
+				<div class="openerMessageLine">
+					<h1>for products <span class="openerMessageSmallText"">&</span> </h1>
 				</div>
 					
-				<div>
+				<div class="openerMessageLine">
 					<h1>services</h1>
-					<div class="bigButton" style="background-color: #18AF94; color:#ffffff;">
+					<div class="bigButton" id="openerButton" style="background-color: #18AF94; color:#ffffff;">
 						<h3>work - 2021</h3>
 					</div>
 				</div>
@@ -83,13 +83,17 @@
 
 			</div>
 			<div id="openerAboutMe">
-				<h4>
-					With my background in human-computer interaction and industrial design, I involve methods of user-centered design as basis  for a sustainable and value-driven tech development. <br><br>	
-
-					I believe design should enrich our day to day through culture, co-creation and community. <br><br>
-
-					In my work at <span style="font-family: Montserrat ">CASAVI</span> I aim to involve the users voice in all design decision to evolve the product towards user value. <br>
-				</h4>
+				<div id="aboutMeWrapper">
+					<h4>
+						With my background in human-computer interaction and industrial design, I involve methods of user-centered design as basis  for a sustainable and value-driven tech development. <br><br>	
+	
+						I believe design should enrich our day to day through culture, co-creation and community. <br><br>
+	
+						In my work at <span style="font-family: Montserrat ">CASAVI</span> I aim to involve the users voice in all design decision to evolve the product towards user value. <br>
+					</h4>
+				</div>
+				
+				
 
 			</div>
 			<!-- <div id="openerGraphic">
@@ -109,7 +113,15 @@
 		<div class="projectsContainer">
 			<div class="bigCard1">
 				<a href="/projects/project_casavi_capp.html">
-					<img src="/content/elements/gamification_main.png" alt="">
+					<picture>
+						<source 
+						   media="(min-width: 480px)"
+						   srcset="/content/elements/gamification_main.png">
+						<source 
+						   srcset="/content/elements/gamification_main_mobile.png">
+						<img src="/content/elements/gamification_main.png" 
+						alt="">
+					</picture>	
 					<div class="projectCaption">
 						<p>Web Design - Business Project</p>
 						<h4>A device to encourage the use of digital media within an aging society. </h4>
@@ -119,7 +131,15 @@
 			
 			<div class="smallCard1">
 				<a href="/projects/project_casavi_capp.html">
-					<img src="/content/elements/capp_main.png" alt="">
+					<picture>
+						<source 
+						   media="(min-width: 480px)"
+						   srcset="/content/elements/capp_main.png">
+						<source 
+						   srcset="/content/elements/capp_main_mobile.png">
+						<img src="/content/elements/capp_main.png" 
+						alt="">
+					</picture>					
 					<div class="projectCaption">
 						<p>Web Design - Business Project</p>
 						<h4>A device to encourage the use of digital media within an aging society. </h4>
@@ -129,7 +149,15 @@
 
 			<div class="smallCard2">
 				<a href="/projects/project_shopping_friend.html">
-					<img src="/content/elements/shopping_friend_main.png" alt="">
+					<picture>
+						<source 
+						   media="(min-width: 480px)"
+						   srcset="/content/elements/shopping_friend.png">
+						<source 
+						   srcset="/content/elements/shopping_friend_mobile.png">
+						<img src="/content/elements/gamification_main.png" 
+						alt="">
+					</picture>
 					<div class="projectCaption">
 						<p>Web Design - Business Project</p>
 						<h4>A device to encourage the use of digital media within an aging society. </h4>
@@ -139,16 +167,23 @@
 
 			<div class="bigCard2">
 				<a href="/projects/project_bridge.html">
-					<img src="/content/elements/bridge_main.png" alt="">
+					<picture>
+						<source 
+						   media="(min-width: 480px)"
+						   srcset="/content/elements/bridge_main.png">
+						<source 
+						   srcset="/content/elements/bridge_main_mobile.png">
+						<img src="/content/elements/bridge_main.png" 
+						alt="">
+					</picture>
 					<div class="projectCaption">
 						<p>Web Design - Business Project</p>
 						<h4>A device to encourage the use of digital media within an aging society. </h4>
+					</div>
 				</a>
 			</div>
 
 
-			</div>
-			<div class="bigCard"><img src="" alt=""></div>
 		</div>
 
 		
@@ -161,44 +196,55 @@
 
 
 
-	<div class="closerParent">
-		<div>
-			<h1>hit me up for a</h1>
-		</div>
-		<div>
-			<h1>conversation <span style="font-size: 12rem" id="myEmoji">⬇</span></h1>
+	<div id="closerParent">
+		<div id="closerContentWrapper">
+			<div>
+				<h1>hit me up <span id="myEmoji">⬇</span></h1>
+			</div>
+			<div id="buttonParent">
+			
+				<a href="https://www.linkedin.com/in/robin-baudisch-7a455619b/">
+					<div class="bigButton" style="background-color: #0A66C2; color:#ffffff;">
+						<h3>LinkedIn</h3>
+					</div>
+				</a>
+				
+				<a href="https://www.instagram.com/robinbaudisch_/">
+					<div class="bigButton" style="background: rgb(199,64,126);
+				background: linear-gradient(90deg, rgba(199,64,126,1) 0%, rgba(235,168,107,1) 45%, rgba(82,91,202,1) 100%); color: #fff;">
+					<h3>Instagram</h3>
+				</div>
+				</a>
+				
+				<a href="mailto:mail@robinbaudisch.com">
+					<div class="bigButton" style="border: 1px solid black;">
+						<h3>E-Mail</h3>
+					</div>
+				</a>
+
+				
+			</div>
 		</div>
 	</div>
 
-	<div id="buttonParent">
-		<div class="bigButton" style="background-color: #0A66C2; color:#ffffff;">
-			<h3>LinkedIn</h3>
-		</div>
-		<div class="bigButton" style="background: rgb(199,64,126);
-		background: linear-gradient(90deg, rgba(199,64,126,1) 0%, rgba(235,168,107,1) 45%, rgba(82,91,202,1) 100%); color: #fff;">
-			<h3>Instagram</h3>
-		</div>
-		<div class="bigButton" style="border: 1px solid black;">
-			<h3>E-Mail</h3>
-		</div>
-	</div>
 
 
 
 
-	<div style="display: flex; justify-content: center; justify-self: center !important; align-self: center; max-width: 1200px;opacity: 0.5; margin: 0 24px 24px 24px;">
+
+	<div style="display: flex; justify-content: center; justify-self: center; align-self: center ;opacity: 0.3; width: 88vw; margin: 0 0 4vh 0">
 		<p>All content on the website is originally produced by Robin Baudisch. Copyright © 2020 by Robin Baudisch, 85283 Wolnzach. The site is set in Amerigo BT provided by freefontsdownload.net. Stats are tracked using Google Analytics. <a href="https://2016.robinbaudisch.com/" style="text-decoration: underline;">See 2016 portfolio</a></p>
 	</div>
 
 
 
-	<script src="./js/sketch_desktop.js" async defer></script>
+	<!-- <script src="./js/sketch_desktop.js" async defer></script>
 
 	<script src="./js/p5.min.js" async defer></script>	
+ -->
 
 
-
-</div> -->
+</div> 
 		
 		
 
