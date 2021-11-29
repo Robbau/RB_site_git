@@ -191,11 +191,11 @@ body{
 #openerParent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 90vh 1.8fr 3fr;
+    grid-template-rows: 70vh 1fr 1fr;
     grid-column-gap: 24px;
     grid-row-gap: 80px;
     /* max-width:1600px; */
-    height: 300vh;
+    height: 270vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -448,7 +448,9 @@ body{
         font-size: 1rem;
     }
     /* Navigation ----------------------------------------- */
-
+    #header{
+        margin: 0;
+    }
 
 
 
