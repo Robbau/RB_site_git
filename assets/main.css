@@ -30,16 +30,18 @@ h1, h2, h4 {
     float: left;
     padding-bottom: 10px;
 }
-h1{ font-size: 16vw;       
+h1{ font-size: 12.8vw;       
     line-height: 0.75;
-    letter-spacing: -1.3vw;}
+    letter-spacing: -1.1vw;
+    font-weight: 500 !important;
+}
 
 h2{ font-size: 4.2rem;
     line-height: 1.4;}
 
 h3{ font-family: 'AmerigoBT', Georgia, 'Times New Roman', Times, serif ;
     font-style: normal;
-    font-size: 3.0rem;
+    font-size: 2.7vw;
     letter-spacing: 1px;
     line-height: 1.2;
     font-weight: 300;
@@ -122,7 +124,7 @@ body{
     font-family: 'Barlow', Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
-    background-color: white;
+    background-color: #ffffff;
     color: #212022;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -134,14 +136,13 @@ body{
     top: 0;
     left:0;
     right: 0;
-    height: 96px;
     display: flex;
     flex-direction: row;
     align-items: inherit;
     align-self: center;
     justify-content: space-between;
     width: 100%;
-    margin: 40px;
+    margin: 0;
     z-index: 12;
 }
 
@@ -150,7 +151,7 @@ body{
 #navTop{
     top: 0;
     width: 100%;
-    padding: 4vh 6.5vw;
+    margin: 6vw;
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
@@ -178,7 +179,6 @@ body{
     margin: 0;
     padding: 0 0 0 0 ;
     width: 100%;
-    background-color: white;
     left: 0;
     right: 0;
     top: 0;
@@ -200,15 +200,38 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    margin: 0;
     }
     
     #openerMessage { 
         grid-area: 1 / 1 / 2 / 7;
         margin: 0 6vw;
     }
+    #openerMessageGrid { 
+ 
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 1fr 1fr 1.8fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            align-items: center;
+    }
+    #openerMessageGrid div{
+        white-space: nowrap;
+   
+    }
+
+            .openerMessageDiv1 { grid-area: 1 / 1 / 2 / 4; }
+            .openerMessageDiv2 { grid-area: 1 / 4 / 2 / 6; }
+            .openerMessageDiv3 { grid-area: 1 / 6 / 2 / 7; }
+            .openerMessageDiv4 { grid-area: 2 / 1 / 3 / 7; }
+            .openerMessageDiv5 { grid-area: 3 / 1 / 4 / 2; }
+            .openerMessageDiv6 { grid-area: 3 / 2 / 4 / 4; }
+
+            
+
     .openerMessageSmallText{
-        font-size: 10rem;
+        font-size: 7rem;
+        font-weight: 200;
     }
 
     #openerPhoto { 
@@ -223,8 +246,8 @@ body{
     }
 
     #carousel{
-        padding: 4vw 4vw 4vw 50vw;
-        width: 110vw;
+        padding: 4vw 4vw 4vw 30vw;
+        width: 120vw;
         display: flex;
         align-items: center;
         gap: 4vw;
@@ -235,7 +258,8 @@ body{
         overflow-y: scroll; 
     }
     .carouselPhoto{
-        width: 100vw;
+        width: 40vh;
+        max-height: 100%;
     }
 
 
@@ -264,7 +288,6 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 160px;
-    min-width: 260px;
     padding: 3vw;
     margin: 1vw;
 }
@@ -304,7 +327,7 @@ body{
     grid-template-rows: repeat(4, auto);
     grid-column-gap: 24px;
     grid-row-gap: 80px;
-    margin: 4vw;
+    margin: 12vw 4vw;
     }
     
     .bigCard1 { grid-area: 1 / 1 / 2 / 3; }
@@ -355,18 +378,25 @@ body{
 
 @media all and (max-width: 1024px) { 
     #openerParent {
-        grid-template-rows: 110vh 60vh 3fr;
+        grid-template-rows: auto;
         grid-column-gap: 24px;
         grid-row-gap: 80px;
         height: 280vh;
         }   
-    #openerButton{
-        display: none;
-    }
     #buttonParent{
         flex-direction: column;
         gap: 16px;
         padding: 10vh 0 0 0 ;
+    }
+    .openerMessageSmallText{
+        font-size: 6rem;
+    }
+    #carousel{
+        width: 180vw;
+        padding-left: 30vw;
+    }
+    .carouselPhoto{
+        width: 80vw;
     }
 }
 
@@ -391,7 +421,7 @@ body{
         font-size: 2rem;
     }
     h4{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #navTop{
@@ -401,8 +431,9 @@ body{
 
     }
     #openerParent {
+        
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1vh 2fr 3fr;
+        grid-template-rows: 0 auto auto;
         grid-column-gap: 24px;
         grid-row-gap: 80px;
         height: 160vh;
@@ -415,21 +446,24 @@ body{
     #myEmoji{
         font-size: 4rem;
     }
-    .bigButton{
-        min-width: 180px;
-   }
+
    #openerMessage{
        display: none;
    }
    #carousel{
+    height: 100%;
+    width: 100%;
     padding: 0 0 0 10vw ;
     width: 220vw;
    }
+   .carouselPhoto{
+    width: 80vw;
+}
    
 }
 /* Media Query - Phone Size
 ---------------------------------------------------------------------- */
- @media all and  (max-width: 480px) {
+ @media all and (min-width: 320px) and  (max-width: 480px) {
  
     html{font-size: 14px;}
     
@@ -444,6 +478,9 @@ body{
     h3{
         font-size: 2rem;
     }
+    h4{
+        font-size: 1.7rem;
+    }
     h5{
         font-size: 1rem;
     }
@@ -457,7 +494,8 @@ body{
     /* Opener ----------------------------------------- */
 
     #openerParent{
-        grid-template-rows: 0 50vh 50vh;
+        grid-template-rows: 0 auto auto;
+        gap: 8vh;
     }
     .openerMessageLine{
         align-content:flex-start;
@@ -471,10 +509,15 @@ body{
     .bigButton{
         min-width: 180px;
    }
+   .carouselPhoto{
+       min-width: 200px;
+       width: 80vw;
+   }
 
    /* Projects Section -------------------------------------- */
 
    .projectsContainer {
+    margin-top: 15vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr;
