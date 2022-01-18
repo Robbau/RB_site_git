@@ -9,128 +9,13 @@ Css for sub pages as projects / blog go in here
 
 /* Grid
 -------------------------------------*/
-.projectContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
-}
-.projectDescription{
-    max-width: 480px;;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    overflow: hidden;
-    width: 50%;
-    margin-bottom: -150px;
-    margin-left: 10%;
-}
-.projectWrapper{
-    top: 0;
-    align-items: flex-start;
-    justify-items: flex-start;
-    justify-content: flex-start;
-    z-index: 10;
-    width: 100vw;
-    max-width: 1300px;
-}
-.projectWrapper img{
-    max-width: 100%;
-}
-.projectWrapper p{    
-    max-width: 380px;
-    min-width: 280px;
-    margin: 36px;
-}
-.itemLeft{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    justify-items: flex-start;
-    flex-direction: row;
-    width: 100%;
-}
-.itemRight{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    justify-items: flex-end;
-    flex-direction: row;
-    width: 100%;
-}
-.itemCenter{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
-}
+
 
 
 
 /* ABOUT PAGE
 --------------------------------------------------------------*/
 
-
-.aboutOpener {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, 140px);
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-    max-width: 1300px;
-    -ms-user-select: None;
-    -moz-user-select: None;
-    -webkit-user-select: None;
-    user-select: None;
-    }
-    
-    #welcome1 { grid-area: 1 / 1 / 5 / 13; }
-    #portrait { grid-area: 5 / 4 / 12 / 13; }
-
-.aboutTitle{
-    padding: 0% 2% 10% 2%;
-}
-
-#cv{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    max-width: 950px;
-    background-color: rgb(42, 116, 100) ;
-    border-radius: 10px;
-}
-.cvItem{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color: #FFFFFF;
-    padding: 20px;
-    margin: 30px;
-}
-.cvItem p{
-    width: 70%;
-    align-self: inherit;
-    align-items: inherit;
-    color: inherit;
-    font-weight: 400 ;
-}
-.right{
-    border-right: 2px solid #FFFFFF;
-    align-self: flex-end;
-    align-items: flex-end;
-    text-align: left;
-}
-.left{
-    border-left: 2px solid #FFFFFF;
-    align-self: flex-start;
-    align-items: flex-start;
-    text-align: left;
-}
 
 
 
@@ -141,9 +26,6 @@ Css for sub pages as projects / blog go in here
 @media all and (min-width: 1024px) { 
     html{font-size: 16px;}
 
-    nav ul li a{        
-        color: rgb(20,20,20) ;
-    }
 }
  
 /* Small Screen Size
@@ -151,102 +33,18 @@ Css for sub pages as projects / blog go in here
 @media all and  (max-width: 1024px) { 
     html{font-size: 16px;}
 
-    #headerBackground{
-        display: none;
-    }
-    nav ul li a{        
-        color: rgb(20,20,20) ;
-    }
-    .projectWrapper p{    
-        max-width: 300px;
-    }
-    .projectWrapper{
-        width: 90vw !important;
-        justify-content: center !important;
-        align-items: center !important;
-        justify-items: center !important;
-    }
-    .itemLeft{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        justify-items: flex-start;
-        flex-direction: column;
-        width: 100%;
-    }
-    .itemRight{
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        justify-items: flex-end;
-        flex-direction: column;
-        width: 100%;
-    }
-    .itemCenter{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        justify-items: center;
-        width: 100%;
-    }
-    #cv{
-        width: 75% ;
-    }
+    
 }
 /* Tablet Size
 ---------------------------------------------------------------------- */
 @media all and  (max-width: 768px) {
     html{font-size: 14px;}
-    nav{
-        padding: 0 0 0 0  ;
-    }
-    .projectDescription{
-        width: 100%;;
-    }
-    .projectWrapper{
-        width: 90vw !important;
-        justify-content: center !important;
-        align-items: center !important;
-        justify-items: center !important;
-    }
-    .projectWrapper div{
-        margin: 5vh !important;
-        flex-direction: column !important;
-    }
-    .aboutOpener{
-        display: flex;
-        justify-content: center ;
-        align-items: center ;
-        flex-direction: column 
-    }
-    #cv{
-        width: 90% ;
-        padding-top: 0;
-    }
+    
+    
 }
 /* Phone Size
 ---------------------------------------------------------------------- */
  @media all and  (max-width: 480px) {
     
-    html{font-size: 14px;}
-    h2{
-         font-size: 2em ;
-     }
-    .projectWrapper{
-        /* width: 90vw !important; */
-        justify-content: center !important;
-        align-items: center !important;
-        justify-items: center !important;
-    }
-    .projectWrapper div{
-        justify-content: center !important;
-        align-items: center !important;
-        justify-items: center !important;
-        margin: 0 0 0 0 !important;
-    }
-    .projectWrapper p{    
-        width: 6 0%;
-        margin-bottom: 5vh !important;
-    }
+    
  }

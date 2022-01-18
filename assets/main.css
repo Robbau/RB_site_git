@@ -30,10 +30,10 @@ h1, h2, h4 {
     float: left;
     padding-bottom: 10px;
 }
-h1{ font-size: 12.8vw;       
+h1{ font-size: 13.4vw;       
     line-height: 0.75;
     letter-spacing: -1.1vw;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
 }
 
 h2{ font-size: 4.2rem;
@@ -151,7 +151,7 @@ body{
 #navTop{
     top: 0;
     width: 100%;
-    margin: 6vw;
+    margin: 4vw;
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
@@ -191,7 +191,7 @@ body{
 #openerParent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 80vh 1fr 1fr;
+    grid-template-rows: 65vh 1fr 1fr;
     grid-column-gap: 24px;
     grid-row-gap: 80px;
     /* max-width:1600px; */
@@ -204,7 +204,7 @@ body{
     
     #openerMessage { 
         grid-area: 1 / 1 / 2 / 7;
-        margin: 0 6vw;
+        margin: 0 4vw;
     }
     #openerMessageGrid { 
  
@@ -235,7 +235,7 @@ body{
     }
 
     #openerPhoto { 
-        grid-area: 4 / 1 / 5 / 7; 
+        grid-area: 2 / 1 / 4 / 7; 
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;        
@@ -250,7 +250,7 @@ body{
         width: 120vw;
         display: flex;
         align-items: center;
-        gap: 4vw;
+        gap: 5vw;
         overflow-x: scroll;
         white-space: nowrap;
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -260,12 +260,15 @@ body{
     .carouselPhoto{
         width: 60vh;
         max-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
     #openerAboutMe { 
-        grid-area: 2 / 1 / 4 / 5;
-        margin: 6vw;
+        grid-area: 4 / 1 / 6 / 5;
+        margin: 4vw;
     }
     #openerGraphic { 
         grid-area: 3 / 5 / 5 / 7;
@@ -290,9 +293,8 @@ body{
     border-radius: 160px;
     padding: 3.5vw;
 }
-a :hover{
-    background-color: #EDF1F3 !important;
-}
+
+
 
 
 
@@ -328,9 +330,9 @@ a :hover{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
-    grid-column-gap: 24px;
-    grid-row-gap: 80px;
-    margin: 12vw 6vw;
+    grid-column-gap: 40px;
+    grid-row-gap: 12vh;
+    margin: 12vw 4vw;
     }
     
     .bigCard1 { grid-area: 1 / 1 / 2 / 3; }
@@ -384,8 +386,14 @@ a :hover{
         grid-template-rows: auto;
         grid-column-gap: 24px;
         grid-row-gap: 80px;
-        height: 280vh;
+        height: 200vh;
         }   
+    #openerAboutMe{
+        grid-area: 4 / 1 / 5 / 7;
+    }
+    #openerPhoto{
+        grid-area: 2 / 1 / 4 / 7; 
+    }
     #buttonParent{
         flex-direction: column;
         gap: 16px;
@@ -443,7 +451,6 @@ a :hover{
         width: 100%;
         }
     #openerAboutMe { 
-        grid-area: 3 / 1 / 5 / 7;
         margin: 4vw;        
     }
     #myEmoji{
@@ -539,3 +546,6 @@ a :hover{
     /* HOVERS
 -------------------------------------*/
 
+#buttonParent a :hover{
+    background-color: #EDF1F3 !important;
+}
