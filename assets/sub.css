@@ -48,6 +48,7 @@ Css for sub pages like projects go in here
     background: url(../content/projects/bridge/bridge_projectOpener_1_desktop_large.png);
     background-size: cover;
     background-position: 50% 50%;
+
 }
 #openerImg_capp{
     background: url(../content/projects/capp/capp_projectOpener_desktop.png);
@@ -56,8 +57,8 @@ Css for sub pages like projects go in here
 }
 #openerImg_shoppingFriend{
     background: url(../content/projects/shopping_friend/shopping_friend_opener_desktop.png);
-    background-size: cover;
-    background-position: 15% 85%;
+    background-size: 220vw;
+    background-position: 30% 55%;
 }
 
 .projectNote{
@@ -221,7 +222,6 @@ Css for sub pages like projects go in here
     #shoppingFriend_contentWrapper div{
         margin: 0 !important;
     }
-
 
 
     /* Bridge ------  Project Grid #1
