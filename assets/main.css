@@ -201,16 +201,16 @@ body{
     grid-column-gap: 24px;
     grid-row-gap: 80px;
     /* max-width:1600px; */
-    height: 270vh;
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
+    margin-bottom: 10vh;
     }
     
     #openerMessage { 
         grid-area: 1 / 1 / 2 / 7;
-        margin: 0 4vw;
+        margin: 0 5vw ;
     }
     #openerMessageGrid { 
  
@@ -429,12 +429,35 @@ body{
     h2{
         font-size: 3.5rem ;
     }
+    .bigButton{
+        min-width: 120px;
+        min-height: 48px;
+        padding: unset;
+        height: 12vh;
+   }
     #openerParent {
-        grid-template-rows: auto;
+        
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, max-content);
         grid-column-gap: 24px;
         grid-row-gap: 80px;
-        height: 200vh;
-        }   
+        width: 100%;
+        margin-top: 4vh;;
+        }
+    #openerMessage{
+        grid-area: 1 / 1 / 2 / 7;
+    }
+    #openerMessageGrid{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr 0;
+        grid-row-gap: 40px;
+    }
+        .openerMessageDiv1 { display: none; }
+        .openerMessageDiv2 { grid-area: 1 / 2 / 2 / 5; }
+        .openerMessageDiv4 { display: none; }
+        .openerMessageDiv5 { display: none; }
+        .openerMessageDiv6 { grid-area: 2 / 1 / 3 / 3; }
+  
     #openerAboutMe{
         grid-area: 4 / 1 / 5 / 7;
     }
@@ -446,15 +469,13 @@ body{
         gap: 16px;
         padding: 10vh 0 0 0 ;
     }
-    #openerMessage{
-        display: none;
-    }
+
     #carousel{
         width: 180vw;
         padding-left: 30vw;
     }
     .carouselPhoto{
-        width: 80vw;
+        width: 70vw;
     }
 }
 
@@ -488,17 +509,8 @@ body{
         justify-content: flex-start;
 
     }
-    #openerParent {
-        
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 0 auto auto;
-        grid-column-gap: 24px;
-        grid-row-gap: 80px;
-        height: 130vh;
-        width: 100%;
-        }
     #openerAboutMe { 
-        margin: 4vw;        
+        margin: 5vw;        
     }
     #myEmoji{
         font-size: 4rem;
@@ -510,7 +522,7 @@ body{
         width: 220vw;
    }
    .carouselPhoto{
-        width: 80vw;
+        width: 60vw;
     }
     #cvParent{
         margin: 10vh 0 10vh 0 ;
@@ -540,7 +552,7 @@ body{
         letter-spacing: -2px;
     }
     h3{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     h4{
         font-size: 1.7rem;
@@ -568,8 +580,10 @@ body{
     /* Opener ----------------------------------------- */
 
     #openerParent{
-        grid-template-rows: 0 auto auto;
+        grid-template-rows: repeat(3, max-content);
+        grid-template-columns: repeat(4, 1fr);
         gap: 8vh;
+        width: 100vw;
     }
     .openerMessageLine{
         align-content:flex-start;
@@ -580,14 +594,10 @@ body{
     .openerMessageSmallText{
         font-size: 4rem;
     }
-    .bigButton{
-        min-width: 120px;
-        min-height: 48px;
-        padding: 6vw;
-   }
+
    .carouselPhoto{
        min-width: 200px;
-       width: 80vw;
+       width: 55vw;
    }
    #closerParent{
        padding: 10vh 0 10vh 0;
