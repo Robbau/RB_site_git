@@ -48,7 +48,7 @@ h4{ font-size: 4.2rem;
     letter-spacing: -1.7px;
 }
 h5, h6 {
-    line-height: 1.2em;
+    line-height: 1.1em;
     text-align: left;
 }
 h5{ font-size: 2.2rem;
@@ -157,7 +157,7 @@ body{
 #navTop{
     top: 0;
     width: 100%;
-    margin: 4vw 5vw;
+    margin: 4vw 6vw;
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
@@ -245,14 +245,14 @@ body{
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;        
-        width: 100vw;
+        width: 100%;
         }
     #openerPhoto::-webkit-scrollbar {
         display: none; /* for Chrome, Safari, and Opera */          
     }
 
     #carousel{
-        padding: 0vw 0vw 0vw 40vw;
+        padding: 0vw 5vw 0vw 40vw;
         width: 120vw;
         display: flex;
         align-items: center;
@@ -341,7 +341,7 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     width: 88vw;
-    padding: 20vh 0 10vh 0 ;
+    padding: 20vh 0 5vh 0 ;
 }
 #closerContentWrapper{
     width: 100%;
@@ -354,8 +354,9 @@ body{
     align-items: flex-start;
     align-content: flex-start;
     justify-content: flex-start;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 8vh 0 20vh 0 ;
+    padding: 8vh 0 8vh 0 ;
     gap: 24px;
 }
 
@@ -379,15 +380,12 @@ body{
     .smallCard4 { grid-area: 3 / 2 / 4 / 3; }
 
 
-.projectsContainer div{
-    display: block;
-}
 .projectCaption{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 1.5rem;
-    gap: 24px;
+    margin-top: 16px;
+    gap: 4px;
 }
 .projectCaption h5{
     padding-top: 8px;
@@ -432,9 +430,19 @@ body{
     .bigButton{
         min-width: 120px;
         min-height: 48px;
-        padding: unset;
+        padding: 4vw;
         height: 12vh;
+        min-height: 100px !important;
    }
+   .openerBigButton{
+        padding: unset !important;
+   }
+   #navTop{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
     #openerParent {
         
         grid-template-columns: repeat(6, 1fr);
@@ -442,7 +450,7 @@ body{
         grid-column-gap: 24px;
         grid-row-gap: 80px;
         width: 100%;
-        margin-top: 4vh;;
+        margin-top: 4vh;
         }
     #openerMessage{
         grid-area: 1 / 1 / 2 / 7;
@@ -471,8 +479,7 @@ body{
     }
 
     #carousel{
-        width: 180vw;
-        padding-left: 30vw;
+        padding: 0 5vw 0 50vw;
     }
     .carouselPhoto{
         width: 70vw;
@@ -503,12 +510,6 @@ body{
         font-size: 2.5rem;
     }
 
-    #navTop{
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-
-    }
     #openerAboutMe { 
         margin: 5vw;        
     }
@@ -517,12 +518,11 @@ body{
     }
    #carousel{
         height: 100%;
-        width: 100%;
-        padding: 0 0 0 10vw ;
-        width: 220vw;
+        padding: 0 5vw 0 35vw; ;
+
    }
    .carouselPhoto{
-        width: 60vw;
+        width: 80vw;
     }
     #cvParent{
         margin: 10vh 0 10vh 0 ;
@@ -627,7 +627,7 @@ body{
     }
 
     .projectCaption{
-        margin-top: 0.8rem;
+        margin-top: 24px;
     }
 
 

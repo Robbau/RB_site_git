@@ -177,6 +177,7 @@ Css for sub pages like projects go in here
     }
     #openerImg_shoppingFriend{
         background-position: 40% 60%;
+        background-size: 320vw;
     }
     .projectNote{
         margin: 0;
