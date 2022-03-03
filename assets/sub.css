@@ -215,13 +215,13 @@ Css for sub pages like projects go in here
     }
     
     #bridge_contentWrapper div{
-        margin: 0 !important;
+        margin: 5vh 0 0 0 !important;
     }
     #capp_contentWrapper div{
-        margin: 0 !important;
+        margin: 5vh 0 0 0 !important;
     }
     #shoppingFriend_contentWrapper div{
-        margin: 0 !important;
+        margin: 5vh 0 0 0 !important;
     }
 
 

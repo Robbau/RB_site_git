@@ -40,11 +40,11 @@ h3{
     font-size: 2.1rem;
     letter-spacing: 0.1px;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 500;
 }
 h4{ font-size: 4.2rem;
     line-height: 1.1;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: -1.7px;
 }
 h5, h6 {
@@ -627,7 +627,7 @@ body{
     }
 
     .projectCaption{
-        margin-top: 24px;
+        margin-top: 16px;
     }
 
 
