@@ -37,7 +37,6 @@ Css for sub pages like projects go in here
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px;
 }
 .openerImg{
     height: 90vh;
@@ -170,7 +169,7 @@ Css for sub pages like projects go in here
 ---------------------------------------------------------------------- */
 @media all and  (max-width: 768px) {
     html{font-size: 14px;}
-    
+
 
     .projectHeading{
         margin: 50vh 4vw 0 4vw;

@@ -90,8 +90,8 @@ hr{
     width: 100%;
 }
 img{
-    max-width: 100% !important;
-    max-height: 100% !important;
+    max-width: 120% !important;
+    max-height: 120% !important;
     z-index: 1;
 }
 th, td{
@@ -253,11 +253,12 @@ body{
 
     #carousel{
         padding: 0vw 5vw 0vw 40vw;
-        width: 120vw;
         display: flex;
         align-items: center;
         gap: 5vw;
+        width: 120vw;
         overflow-x: scroll;
+        overflow-x: hidden;
         white-space: nowrap;
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
         scrollbar-width: none; /* for Firefox */
@@ -376,6 +377,10 @@ body{
     margin: 12vw 4vw;
     /* max-width: 1800px; */
     }
+.projectsContainer img{
+    width: 100%;
+    height: auto;
+}
     
     .smallCard1 { grid-area: 1 / 1 / 2 / 2; }
     .smallCard2 { grid-area: 1 / 2 / 2 / 3; }
