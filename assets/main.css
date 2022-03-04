@@ -370,7 +370,7 @@ body{
 .projectsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, max-content);
     grid-column-gap: 40px;
     grid-row-gap: 12vh;
     margin: 12vw 4vw;
