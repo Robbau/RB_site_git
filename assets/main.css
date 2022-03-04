@@ -42,7 +42,7 @@ h3{
     line-height: 1.2;
     font-weight: 500;
 }
-h4{ font-size: 4.2rem;
+h4{ font-size: 4.0rem;
     line-height: 1.1;
     font-weight: 500;
     letter-spacing: -1.7px;
@@ -529,7 +529,8 @@ body{
     }
    #carousel{
         height: 100%;
-        padding: 0 5vw 0 35vw; ;
+        padding: 0 5vw 0 35vw; 
+        width: 180vw;
 
    }
    .carouselPhoto{
