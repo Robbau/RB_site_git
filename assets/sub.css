@@ -88,7 +88,7 @@ Css for sub pages like projects go in here
 		#bridge_imgHardwareDetail1 { grid-area: 4 / 1 / 5 / 4; }
 		#bridge_imgHardwareDetail2 { grid-area: 4 / 4 / 5 / 7; }
 		#bridge_textProto { grid-area: 5 / 2 / 6 / 5; }
-		#bridge_videoProto { grid-area: 6 / 2 / 7 / 7; }
+		#bridge_videoProto { grid-area: 6 / 2 / 7 / 6; }
 		#bridge_imgProtoScreens { grid-area: 7 / 1 / 9 / 7; }
 		#bridge_imgProtoDetail { grid-area: 8 / 1 / 9 / 3; }
 
@@ -146,15 +146,6 @@ Css for sub pages like projects go in here
 
 /* MEDIA QUERIES
 ----------------------------------------------------------------------*/
-
-
-@media all and (min-width: 1024px) { 
-    html{font-size: 16px;}
-
-    .projectHeading{
-        margin: 55vh 20vw 0 4vw;
-    }
-}
  
 /* Small Screen Size
 ---------------------------------------------------------------------- */

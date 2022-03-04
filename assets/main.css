@@ -29,7 +29,7 @@ h1{ font-size: 12.7vw;
 
 h2{ font-size: 5.4rem;
     line-height: 1.0;
-    letter-spacing: -4px;
+    letter-spacing: -6px;
     font-weight: 500;  
     text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
   
@@ -90,8 +90,8 @@ hr{
     width: 100%;
 }
 img{
-    max-width: 120% !important;
-    max-height: 120% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
     z-index: 1;
 }
 th, td{
@@ -255,14 +255,13 @@ body{
         padding: 0vw 5vw 0vw 40vw;
         display: flex;
         align-items: center;
-        gap: 5vw;
+        gap: 8vw;
         width: 120vw;
         overflow-x: scroll;
-        overflow-x: hidden;
+        overflow-y: scroll; 
         white-space: nowrap;
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
         scrollbar-width: none; /* for Firefox */
-        overflow-y: scroll; 
     }
     .carouselPhoto{
         width: 60vh;
@@ -371,15 +370,18 @@ body{
 .projectsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 12vh;
     margin: 12vw 4vw;
     /* max-width: 1800px; */
     }
 .projectsContainer img{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 100%;
-    height: auto;
 }
     
     .smallCard1 { grid-area: 1 / 1 / 2 / 2; }
