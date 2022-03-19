@@ -80,6 +80,7 @@ p{
 }
 .material-icons{
     font-size: 32px !important;
+    font-family: material;
 }
 a{  color: black;
     text-decoration: none;
@@ -382,10 +383,10 @@ body{
             padding: 8vh 0 8vh 0 ;
             gap: 24px;
         }
-/* 
+
 #myEmoji{
     font-size: 9rem;
-} */
+}
 
 
 
@@ -570,9 +571,9 @@ body{
             }
         /* Opener
         ------------------------------*/
-            /* #myEmoji{
-                font-size: 4rem;
-            } */
+        #myEmoji{
+            font-size: 4rem;
+        }
         #carousel{
                 height: 100%;
                 padding: 0 5vw 0 35vw; 
