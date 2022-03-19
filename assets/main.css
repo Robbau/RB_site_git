@@ -21,9 +21,9 @@ h1, h2, h5, h6 {
 h3, h4 {
     font-family: 'Shippori Mincho' , Georgia, 'Times New Roman', Times, serif;
 }
-h1{ font-size: 12.7vw;       
+h1{ font-size: 12.2vw;       
     line-height: 0.8;
-    letter-spacing: -1.1vw;
+    letter-spacing: -1.0vw;
     font-weight: 400 !important;
 }
 
@@ -42,7 +42,7 @@ h3{
     line-height: 1.2;
     font-weight: 500;
 }
-h4{ font-size: 4.0rem;
+h4{ font-size: 3.4rem;
     line-height: 1.1;
     font-weight: 500;
     letter-spacing: -1.7px;
@@ -52,7 +52,7 @@ h5, h6 {
     text-align: left;
 }
 h5{ font-size: 2.2rem;
-    letter-spacing: 0px;
+    letter-spacing: -0.5px;
     font-style: normal;
     font-weight: 400;
 }
@@ -157,7 +157,7 @@ body{
 #navTop{
     top: 0;
     width: 100%;
-    margin: 4vw 6vw;
+    margin: 6vw 6vw;
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
@@ -324,7 +324,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50vw;
+    width: 60vw;
 }
 .cvItemContent{
     justify-content: space-between;
@@ -349,6 +349,10 @@ body{
 }
 #closerContentWrapper{
     width: 100%;
+}
+#closerHeadline{
+    display: flex;
+    flex-direction: row;
 }
 #myEmoji{
     font-size: 9rem;
@@ -441,7 +445,6 @@ body{
     .bigButton{
         min-width: 120px;
         min-height: 48px;
-        padding: 4vw;
         height: 12vh;
         min-height: 100px !important;
    }
@@ -495,6 +498,9 @@ body{
     .carouselPhoto{
         width: 70vw;
     }
+    .cvItem{
+        width: 70vw;
+    }
 }
 
 
@@ -546,6 +552,13 @@ body{
     .cvItem{
         width: 88vw;
     }
+
+    #closerHeadline{
+        flex-direction: column;
+    }
+    #closerHeadline div{
+        margin: 5vh 0 0 0;
+    }
    
 }
 /* Media Query - Phone Size
@@ -564,7 +577,7 @@ body{
         letter-spacing: -2px;
     }
     h3{
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     h4{
         font-size: 1.7rem;
@@ -572,6 +585,7 @@ body{
     }
     h5{
         font-size: 1.6rem;
+        letter-spacing:0;
     }
     h7{
         font-size: 0.65rem;
@@ -612,7 +626,7 @@ body{
        width: 55vw;
    }
    #closerParent{
-       padding: 10vh 0 10vh 0;
+       padding: 10vh 0 0 0;
        width: 90vw
    }
    .cvItem{
