@@ -37,6 +37,7 @@ Css for sub pages like projects go in here
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 16px;;
 }
 .openerImg{
     height: 90vh;
@@ -153,7 +154,11 @@ Css for sub pages like projects go in here
     html{font-size: 16px;}
 
     .projectHeading{
-        margin: 50vh 4vw 0 4vw;
+        margin: 60vh 4vw 0 4vw;
+    }
+    #openerImg_shoppingFriend{
+        background-position: 40% 60%;
+        background-size: 300vw;
     }
 }
 /* Tablet Size
@@ -167,7 +172,7 @@ Css for sub pages like projects go in here
     }
     #openerImg_shoppingFriend{
         background-position: 40% 60%;
-        background-size: 320vw;
+        background-size: 440vw;
     }
     .projectNote{
         margin: 0;

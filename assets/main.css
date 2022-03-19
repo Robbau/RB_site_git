@@ -440,7 +440,8 @@ body{
 
 @media all and (max-width: 1024px) { 
     h2{
-        font-size: 3.5rem ;
+        font-size: 4.2rem ;
+        letter-spacing: -4px;
     }
     .bigButton{
         min-width: 120px;
@@ -526,6 +527,10 @@ body{
     h4{
         font-size: 2.5rem;
     }
+    h5{
+        font-size:2.2rem;
+        line-height: 2rem;
+    }
 
     #openerAboutMe { 
         margin: 5vw;        
@@ -586,9 +591,11 @@ body{
     h5{
         font-size: 1.6rem;
         letter-spacing:0;
+        line-height: 1.7rem;
     }
     h7{
         font-size: 0.65rem;
+        line-height: 14px;
     }
     hr{
         margin: 24px 0 24px 0;
