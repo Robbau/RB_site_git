@@ -275,7 +275,7 @@ body{
             margin: 10vw 4vw 4vw 4vw;
         }
 
-        
+
     /* #openerGraphic { 
         grid-area: 3 / 5 / 5 / 7;
         margin: 0 100px 0 0 ;
@@ -312,6 +312,17 @@ body{
             -webkit-backdrop-filter: blur(0.3rem);
             backdrop-filter: blur(0.3rem);
         }
+                /* Button - HOVERS
+                -------------------------------------*/
+
+                #buttonParent a :hover{
+                    background-color: #EDF1F3 ;
+                    transition: 0.5s;
+                }
+                #bigButtonMail :hover{
+                    background-color: #DF623B !important;
+                    transition: 0.5s;
+                }
 
 
  /* Closer - CV
@@ -392,8 +403,15 @@ body{
     grid-column-gap: 40px;
     grid-row-gap: 12vh;
     margin: 12vw 4vw;
-    /* max-width: 1800px; */
     }
+/* Project Section - Grid
+----------------------------------------------------------*/
+    .smallCard1 { grid-area: 1 / 1 / 2 / 2; }
+    .smallCard2 { grid-area: 1 / 2 / 2 / 3; }
+    .bigCard1 { grid-area: 2 / 1 / 3 / 3; }
+    .smallCard3 { grid-area: 3 / 1 / 4 / 2; }
+    .smallCard4 { grid-area: 3 / 2 / 4 / 3; }
+
 .projectsContainer img{
     left: 0;
     right: 0;
@@ -401,14 +419,6 @@ body{
     bottom: 0;
     width: 100%;
 }
-    
-    .smallCard1 { grid-area: 1 / 1 / 2 / 2; }
-    .smallCard2 { grid-area: 1 / 2 / 2 / 3; }
-    .bigCard1 { grid-area: 2 / 1 / 3 / 3; }
-    .smallCard3 { grid-area: 3 / 1 / 4 / 2; }
-    .smallCard4 { grid-area: 3 / 2 / 4 / 3; }
-
-
 .projectCaption{
     display: flex;
     flex-direction: column;
@@ -424,10 +434,14 @@ body{
 
 /* Content
 ----------------------------------------------------------*/
-#contentWrapper{
+
+
+/* #contentWrapper{
     padding-top: 40vh;
-}
-.sliderContent{
+} */
+
+
+/* .sliderContent{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -446,253 +460,246 @@ body{
 }
 .sliderContent img{
     margin: 12px 0 12px 0;
-}
+} */
 
 
-/* Media Query - Small Screens 1024px
+/* Media Query - Small Screens - 1024px
 ---------------------------------------------------------------------- */
 
 @media all and (max-width: 1024px) { 
-    h2{
-        font-size: 4.2rem ;
-        letter-spacing: -4px;
-    }
-    .bigButton{
-        min-width: 120px;
-        min-height: 48px;
-        height: 12vh;
-        min-height: 100px !important;
-   }
-   .openerBigButton{
-        padding: unset !important;
-   }
-   #navTop{
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-}
-    #openerParent {
-        
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3, max-content);
-        grid-column-gap: 24px;
-        grid-row-gap: 80px;
-        width: 100%;
-        margin-top: 4vh;
+        /* Styles & General
+        ------------------------------*/
+            h2{
+                font-size: 4.2rem ;
+                letter-spacing: -4px;
+            }
+            #navTop{
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            .bigButton{
+                min-width: 120px;
+                min-height: 48px;
+                height: 12vh;
+                min-height: 100px !important;
+            }
+            .openerBigButton{
+                padding: unset !important;
         }
-    #openerMessage{
-        grid-area: 1 / 1 / 2 / 7;
-    }
-    #openerMessageGrid{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 1fr 0;
-        grid-row-gap: 40px;
-    }
-        .openerMessageDiv1 { display: none; }
-        .openerMessageDiv2 { grid-area: 1 / 2 / 2 / 5; }
-        .openerMessageDiv4 { display: none; }
-        .openerMessageDiv5 { display: none; }
-        .openerMessageDiv6 { grid-area: 2 / 1 / 3 / 3; }
-  
-    #openerAboutMe{
-        grid-area: 4 / 1 / 5 / 7;
-    }
-    #openerPhoto{
-        grid-area: 2 / 1 / 4 / 7; 
-    }
-    #buttonParent{
-        flex-direction: column;
-        gap: 16px;
-        padding: 10vh 0 0 0 ;
-    }
 
-    #carousel{
-        padding: 0 5vw 0 50vw;
-    }
-    .carouselPhoto{
-        width: 70vw;
-    }
-    .cvItem{
-        width: 70vw;
-    }
+        /* Opener
+        ------------------------------*/
+            #openerParent {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(3, max-content);
+                grid-column-gap: 24px;
+                grid-row-gap: 80px;
+                width: 100%;
+                margin-top: 4vh;
+                }
+            #openerMessage{
+                grid-area: 1 / 1 / 2 / 7;
+            }
+            #openerMessageGrid{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr 1fr 0;
+                grid-row-gap: 40px;
+            }
+                .openerMessageDiv1 { display: none; }
+                .openerMessageDiv2 { grid-area: 1 / 2 / 2 / 5; }
+                .openerMessageDiv4 { display: none; }
+                .openerMessageDiv5 { display: none; }
+                .openerMessageDiv6 { grid-area: 2 / 1 / 3 / 3; }
+        
+            #openerAboutMe{
+                grid-area: 4 / 1 / 5 / 7;
+            }
+            #openerPhoto{
+                grid-area: 2 / 1 / 4 / 7; 
+            }
+            #carousel{
+                padding: 0 5vw 0 50vw;
+            }
+            .carouselPhoto{
+                width: 70vw;
+            }
+        /* Closer   
+        ------------------------------*/
+            .cvItem{
+                width: 70vw;
+            }
+            #buttonParent{
+                flex-direction: column;
+                gap: 16px;
+                padding: 10vh 0 0 0 ;
+            }
 }
 
 
-
-/* Media Query - Tablet Size
+/* Media Query - Tablet Size - 768 px
 ---------------------------------------------------------------------- */
-
 @media all and  (max-width: 768px) {
 
-    html{font-size: 14px;}
-    
-    h1{
-        font-size: 9rem;
-        letter-spacing: -0.8rem;
-        line-height: 1;
-    }
-    h2{
-        font-size: 4rem ;
-    }
-    h3{
-        font-size: 2rem;
-    }
-    h4{
-        font-size: 2.5rem;
-    }
-    h5{
-        font-size: 1.6rem;
-        letter-spacing:0;
-        line-height: 1.7rem; 
-    }
-    h7{
-        font-size: 0.65rem;
-        line-height: 14px;
-    }
+        /* Styles
+        ------------------------------*/
+            html{font-size: 14px;}
 
-    #openerAboutMe { 
-        margin: 5vw;        
-    }
-    #myEmoji{
-        font-size: 4rem;
-    }
-   #carousel{
-        height: 100%;
-        padding: 0 5vw 0 35vw; 
-        width: 180vw;
-
-   }
-   .carouselPhoto{
-        width: 80vw;
-    }
-    .projectsContainer {
-        grid-column-gap: 24px;
-        grid-row-gap: 40px;
-        margin: 12vw 5vw;
+            h1{
+                font-size: 9rem;
+                letter-spacing: -0.8rem;
+                line-height: 1;
+            }
+            h2{
+                font-size: 4rem ;
+            }
+            h3{
+                font-size: 2rem;
+            }
+            h4{
+                font-size: 2.5rem;
+            }
+            h5{
+                font-size: 1.6rem;
+                letter-spacing:0;
+                line-height: 1.7rem; 
+            }
+            h7{
+                font-size: 0.65rem;
+                line-height: 14px;
+            }
+        /* Opener
+        ------------------------------*/
+            /* #myEmoji{
+                font-size: 4rem;
+            } */
+        #carousel{
+                height: 100%;
+                padding: 0 5vw 0 35vw; 
+                width: 180vw;
         }
-    #cvParent{
-        margin: 10vh 0 10vh 0 ;
-        width: 100%;
-    }
-    #cvHeading{
-        width: 88vw;
-    }
-    .cvItem{
-        width: 88vw;
-    }
+        .carouselPhoto{
+                width: 80vw;
+            }
+            #openerAboutMe { 
+                margin: 5vw;        
+            }
 
-    #closerHeadline{
-        flex-direction: column;
-    }
-    #closerHeadline div{
-        margin: 5vh 0 0 0;
-    }
+        /* Projects
+        ------------------------------*/
+            .projectsContainer {
+                grid-column-gap: 24px;
+                grid-row-gap: 40px;
+                margin: 12vw 5vw;
+                }
+        /* Closer
+        ------------------------------*/
+            #cvParent{
+                margin: 10vh 0 10vh 0 ;
+                width: 100%;
+            }
+            #cvHeading{
+                width: 88vw;
+            }
+            .cvItem{
+                width: 88vw;
+            }
+            #closerHeadline{
+                flex-direction: column;
+            }
+            #closerHeadline div{
+                margin: 5vh 0 0 0;
+            }
    
 }
 /* Media Query - Phone Size
 ---------------------------------------------------------------------- */
  @media all and (max-width: 480px) {
  
-    html{font-size: 14px;}
-    
-    h1{
-        font-size: 5.5rem;
-        letter-spacing: -0.45rem;
-        line-height: 1;
-    }
-    h2{
-        font-size: 3.2rem ;
-        letter-spacing: -2px;
-    }
-    h3{
-        font-size: 1.6rem;
-    }
-    h4{
-        font-size: 1.9rem;
-        letter-spacing: -0.4px;
-    }
-    h5{
-        font-size: 1.6rem;
-        letter-spacing:0;
-        line-height: 1.7rem;
-    }
-    hr{
-        margin: 24px 0 24px 0;
-    }
-    .material-icons{
-        font-size: 22px !important;
-    }
-    /* Navigation ----------------------------------------- */
-    #header{
-        margin: 0;
-    }
+        /* Styles & General
+        ------------------------------*/
+            html{font-size: 14px;}
+            
+            h1{
+                font-size: 5.5rem;
+                letter-spacing: -0.45rem;
+                line-height: 1;
+            }
+            h2{
+                font-size: 3.2rem ;
+                letter-spacing: -2px;
+            }
+            h3{
+                font-size: 1.6rem;
+            }
+            h4{
+                font-size: 1.9rem;
+                letter-spacing: -0.4px;
+            }
+            h5{
+                font-size: 1.6rem;
+                letter-spacing:0;
+                line-height: 1.7rem;
+            }
+            hr{
+                margin: 24px 0 24px 0;
+            }
+            .material-icons{
+                font-size: 22px !important;
+            }
+            #header{
+                margin: 0;
+            }
+        /* Opener
+        ------------------------------*/
+            #openerParent{
+                grid-template-rows: repeat(3, max-content);
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8vh;
+                width: 100vw;
+            }
+            .openerMessageLine{
+                align-content:flex-start;
+                justify-content:flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            .openerMessageSmallText{
+                font-size: 4rem;
+            }
+            .carouselPhoto{
+                min-width: 200px;
+                width: 55vw;
+            }
 
+        /* Projects
+        ------------------------------*/
+            .projectsContainer {
+                margin-top: 15vh;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-column-gap: 24px;
+                grid-row-gap: 40px;
+                margin: 12vw 5vw;
+            }
+                
+            .bigCard1 { grid-area: 1 / 1 / 2 / 3}
+            .smallCard1 { grid-area: 2 / 1 / 3 / 3 !important}
+            .smallCard2 { grid-area: 3 / 1 / 4 / 3 !important}
+            .smallCard3 { grid-area: 4 / 1 / 5 / 3; }
+            .smallCard4 { grid-area: 5 / 1 / 6 / 3; }
+            }
+            .projectCaption{
+                margin-top: 16px;
+            }
+        /* Closer
+        ------------------------------*/
+            #closerParent{
+                padding: 10vh 0 0 0;
+                width: 90vw
+            }
+            .cvItem{
+                width: 100%;
+            }
 
-
-    /* Opener ----------------------------------------- */
-
-    #openerParent{
-        grid-template-rows: repeat(3, max-content);
-        grid-template-columns: repeat(4, 1fr);
-        gap: 8vh;
-        width: 100vw;
-    }
-    .openerMessageLine{
-        align-content:flex-start;
-        justify-content:flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-    .openerMessageSmallText{
-        font-size: 4rem;
-    }
-
-   .carouselPhoto{
-       min-width: 200px;
-       width: 55vw;
-   }
-   #closerParent{
-       padding: 10vh 0 0 0;
-       width: 90vw
-   }
-   .cvItem{
-       width: 100%;
-   }
-
-   /* Projects Section -------------------------------------- */
-
-   .projectsContainer {
-        margin-top: 15vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 24px;
-        grid-row-gap: 40px;
-        margin: 12vw 5vw;
-        }
-        
-        .bigCard1 { grid-area: 1 / 1 / 2 / 3}
-        .smallCard1 { grid-area: 2 / 1 / 3 / 3 !important}
-        .smallCard2 { grid-area: 3 / 1 / 4 / 3 !important}
-        .smallCard3 { grid-area: 4 / 1 / 5 / 3; }
-        .smallCard4 { grid-area: 5 / 1 / 6 / 3; }
-    }
-
-    .projectCaption{
-        margin-top: 16px;
-    }
-
-
-
-    /* HOVERS
--------------------------------------*/
-
-#buttonParent a :hover{
-    background-color: #EDF1F3 ;
-    transition: 0.5s;
-}
-#bigButtonMail :hover{
-    background-color: #DF623B !important;
-    transition: 0.5s;
-}

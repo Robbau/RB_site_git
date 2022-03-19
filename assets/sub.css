@@ -1,77 +1,73 @@
 /* SUB CSS FILE
-Css for sub pages like projects go in here
+Css for sub pages like projects
 -------------------------------------*/
 
 
 /* PROJECT PAGES
 ------------------------------------------------------------------*/
 
-/* Project Navigation
-------------------------------------------------------------------*/
-.projectsNav{
-    position: fixed;
-    margin-top: 4vw;
-    width: 92vw;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    z-index: 100;
+    /* Project Navigation
+    ------------------------------------------------------------------*/
+    .projectsNav{
+        position: fixed;
+        margin-top: 4vw;
+        width: 92vw;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        z-index: 100;
 
-}
+    }
 
 /* Project Opener
 ------------------------------------------------------------------*/
-.projectOpener{
-    width:100vw;
-    overflow: hidden;
-}
-.projectHeading{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin: 50vh 30vw 0 4vw;
-    position: absolute;
+    .projectOpener{
+        width:100vw;
+        overflow: hidden;
+    }
+    .projectHeading{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: 50vh 30vw 0 4vw;
+        position: absolute;
 
-}
-.starterIcon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 16px;;
-}
-.openerImg{
-    height: 90vh;
-    width: 100vw;
-}
-
-#openerImg_bridge{
-    background: url(../content/projects/bridge/bridge_projectOpener_1_desktop_large.png);
-    background-size: cover;
-    background-position: 50% 50%;
-
-}
-#openerImg_capp{
-    background: url(../content/projects/capp/capp_projectOpener_desktop.png);
-    background-size: cover;
-    background-position: 50% 50%;
-}
-#openerImg_shoppingFriend{
-    background: url(../content/projects/shopping_friend/shopping_friend_opener_desktop.png);
-    background-size: 220vw;
-    background-position: 30% 55%;
-}
-
-.projectNote{
-    display: flex;
-    flex-direction: column;
-    padding: 2vw;
-    margin: 8vh 0;
-    gap: 24px;
-}
+    }
+    .starterIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 16px;;
+    }
+    .openerImg{
+        height: 90vh;
+        width: 100vw;
+    }
+    #openerImg_bridge{
+        background: url(../content/projects/bridge/bridge_projectOpener_1_desktop_large.png);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #openerImg_capp{
+        background: url(../content/projects/capp/capp_projectOpener_desktop.png);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    #openerImg_shoppingFriend{
+        background: url(../content/projects/shopping_friend/shopping_friend_opener_desktop.png);
+        background-size: 220vw;
+        background-position: 30% 55%;
+    }
+    .projectNote{
+        display: flex;
+        flex-direction: column;
+        padding: 2vw;
+        margin: 8vh 0;
+        gap: 24px;
+    }
 
     /* Bridge ------  Project Grid #1
     -------------------------------------*/
-
     #bridge_contentWrapper  {
         margin: 10vw 4vw 4vw 4vw;
 		display: grid;
@@ -80,22 +76,22 @@ Css for sub pages like projects go in here
 		grid-column-gap: 24px;
 		grid-row-gap: 24px;
         max-width: 1500px;
-		}
+	}
 		
-		#bridge_textScenario { grid-area: 1 / 1 / 2 / 4; }
-		#bridge_imgScenario { grid-area: 1 / 4 / 2 / 7; }
-		#bridge_textHardware { grid-area: 2 / 4 / 3 / 7; }
-		#bridge_imgHardware { grid-area: 3 / 2 / 4 / 7; }
-		#bridge_imgHardwareDetail1 { grid-area: 4 / 1 / 5 / 4; }
-		#bridge_imgHardwareDetail2 { grid-area: 4 / 4 / 5 / 7; }
-		#bridge_textProto { grid-area: 5 / 2 / 6 / 5; }
-		#bridge_videoProto { grid-area: 6 / 2 / 7 / 6; }
-		#bridge_imgProtoScreens { grid-area: 7 / 1 / 9 / 7; }
-		#bridge_imgProtoDetail { grid-area: 8 / 1 / 9 / 3; }
+	#bridge_textScenario { grid-area: 1 / 1 / 2 / 4; }
+	#bridge_imgScenario { grid-area: 1 / 4 / 2 / 7; }
+	#bridge_textHardware { grid-area: 2 / 4 / 3 / 7; }
+	#bridge_imgHardware { grid-area: 3 / 2 / 4 / 7; }
+	#bridge_imgHardwareDetail1 { grid-area: 4 / 1 / 5 / 4; }
+	#bridge_imgHardwareDetail2 { grid-area: 4 / 4 / 5 / 7; }
+	#bridge_textProto { grid-area: 5 / 2 / 6 / 5; }
+	#bridge_videoProto { grid-area: 6 / 2 / 7 / 6; }
+	#bridge_imgProtoScreens { grid-area: 7 / 1 / 9 / 7; }
+	#bridge_imgProtoDetail { grid-area: 8 / 1 / 9 / 3; }
+
 
     /* Capp ------  Project Grid #2
     -------------------------------------*/
-
     #capp_contentWrapper {
         margin: 10vw 4vw 4vw 4vw;
         max-width: 1500px;
@@ -104,21 +100,20 @@ Css for sub pages like projects go in here
         grid-template-rows: max-content max-content max-content max-content max-content max-content 90vh;
         grid-column-gap: 24px;
         grid-row-gap: 24px;
-        }
+    }
         
-        #capp_textIntro { grid-area: 1 / 1 / 2 / 4; }
-        #capp_imgIntro { grid-area: 1 / 4 / 2 / 7; }
-        #capp_textArchitecture{ grid-area: 2 / 4 / 3 / 7; }
-        #capp_imgArchitecture { grid-area: 3 / 2 / 4 / 7; }
-        #capp_imgLofiScreens { grid-area: 4 / 1 / 5 / 7; }
-        #capp_textDesignSystem { grid-area: 5 / 4 / 6 / 7; }
-        #capp_imgDesignSystem { grid-area: 6 / 1 / 7 / 7; }
-        #capp_videoProto { grid-area: 7 / 4 / 8 / 7; }
+    #capp_textIntro { grid-area: 1 / 1 / 2 / 4; }
+    #capp_imgIntro { grid-area: 1 / 4 / 2 / 7; }
+    #capp_textArchitecture{ grid-area: 2 / 4 / 3 / 7; }
+    #capp_imgArchitecture { grid-area: 3 / 2 / 4 / 7; }
+    #capp_imgLofiScreens { grid-area: 4 / 1 / 5 / 7; }
+    #capp_textDesignSystem { grid-area: 5 / 4 / 6 / 7; }
+    #capp_imgDesignSystem { grid-area: 6 / 1 / 7 / 7; }
+    #capp_videoProto { grid-area: 7 / 4 / 8 / 7; }
 
 
     /* Shoppinge Friend ------  Project Grid #3
     -------------------------------------*/
-
     #shoppingFriend_contentWrapper {
         margin: 10vw 4vw 4vw 4vw;
         display: grid;
@@ -127,166 +122,161 @@ Css for sub pages like projects go in here
         grid-template-rows: repeat(11, max-content);
         grid-column-gap: 24px;
         grid-row-gap: 24px;
-        }
+    }
         
-        #shoppingFriend_textScenario { grid-area: 1 / 1 / 2 / 4; }
-        #shoppingFriend_imgScenario { grid-area: 1 / 4 / 2 / 7; }
-        #shoppingFriend_textResearch { grid-area: 2 / 3 / 3 / 6; margin: 20vh 0 10vh 0;}
-        #shoppingFriend_imgResearchInsights { grid-area: 3 / 1 / 5 / 6; }
-        #shoppingFriend_imgResearchDiagram { grid-area: 4 / 3 / 6 / 7; }
-        #shoppingFriend_imgPersonas { grid-area: 6 / 1 / 8 / 4; margin: 10vh 5vw 0 5vw}
-        #shoppingFriend_textPersonas { grid-area: 7 / 4 / 8 / 7; }
-        #shoppingFriend_textVision { grid-area: 8 / 3 / 9 / 6; margin-top: 20vh;}
-        #shoppingFriend_imgFlowchart { grid-area: 9 / 3 / 10 / 7; }
-        #shoppingFriend_imgDevice{ grid-area: 10 / 1 / 11 / 3; margin: -50vh 3vw; z-index: 10;}
-        #shoppingFriend_imgStoryboard { grid-area: 11 / 4 / 12 / 7;  margin-left: 5vw;}
+    #shoppingFriend_textScenario { grid-area: 1 / 1 / 2 / 4; }
+    #shoppingFriend_imgScenario { grid-area: 1 / 4 / 2 / 7; }
+    #shoppingFriend_textResearch { grid-area: 2 / 3 / 3 / 6; margin: 20vh 0 10vh 0;}
+    #shoppingFriend_imgResearchInsights { grid-area: 3 / 1 / 5 / 6; }
+    #shoppingFriend_imgResearchDiagram { grid-area: 4 / 3 / 6 / 7; }
+    #shoppingFriend_imgPersonas { grid-area: 6 / 1 / 8 / 4; margin: 10vh 5vw 0 5vw}
+    #shoppingFriend_textPersonas { grid-area: 7 / 4 / 8 / 7; }
+    #shoppingFriend_textVision { grid-area: 8 / 3 / 9 / 6; margin-top: 20vh;}
+    #shoppingFriend_imgFlowchart { grid-area: 9 / 3 / 10 / 7; }
+    #shoppingFriend_imgDevice{ grid-area: 10 / 1 / 11 / 3; margin: -50vh 3vw; z-index: 10;}
+    #shoppingFriend_imgStoryboard { grid-area: 11 / 4 / 12 / 7;  margin-left: 5vw;}
 
 
        
 
-
 /* MEDIA QUERIES
 ----------------------------------------------------------------------*/
  
-/* Small Screen Size
----------------------------------------------------------------------- */
-@media all and  (max-width: 1024px) { 
-    html{font-size: 16px;}
+        /* Desktop Small Screen Size - 1024px 
+        ---------------------------------------------------------------------- */
+        @media all and  (max-width: 1024px) { 
+            html{font-size: 16px;}
 
-    .projectHeading{
-        margin: 60vh 10vw 0 4vw;
-    }
-    #openerImg_shoppingFriend{
-        background-position: 40% 60%;
-        background-size: 300vw;
-    }
-}
-/* Tablet Size
----------------------------------------------------------------------- */
-@media all and  (max-width: 768px) {
-    html{font-size: 14px;}
-
-
-    .projectHeading{
-        margin: 50vh 4vw 0 4vw;
-    }
-    #openerImg_shoppingFriend{
-        background-position: 40% 60%;
-        background-size: 440vw;
-    }
-    .projectNote{
-        margin: 0;
-    }
-    
-
-}
-/* Phone Size
----------------------------------------------------------------------- */
- @media all and  (max-width: 480px) {
-    
-    .openerImg{
-        height: 60vh;
-    }
-    #openerImg_capp{
-        background-position: 70% 30%;
-    }
-    #openerImg_shoppingFriend{
-        background-position: 50% 50%;
-    }
-    .projectsNav{
-        margin-top: 12vw;
-    }
-
-    .projectHeading{
-        margin-top: 3vh;
-        position: relative;
-        gap: 8px;
-    }
-    .starterIcon{
-        display: none;
-    }
-    .projectNote{
-        margin: 4vh 0;
-    }
-    
-    #bridge_contentWrapper div{
-        margin: 5vh 0 0 0 !important;
-    }
-    #capp_contentWrapper div{
-        margin: 5vh 0 0 0 !important;
-    }
-    #shoppingFriend_contentWrapper div{
-        margin: 5vh 0 0 0 !important;
-    }
-
-
-    /* Bridge ------  Project Grid #1
-    -------------------------------------*/
-    #bridge_contentWrapper {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(8, max-content);
-        grid-column-gap: 24px;
-        grid-row-gap: 24px;
+            .projectHeading{
+                margin: 60vh 10vw 0 4vw;
+            }
+            #openerImg_shoppingFriend{
+                background-position: 40% 60%;
+                background-size: 300vw;
+            }
         }
-        
-        #bridge_textScenario { grid-area: 1 / 1 / 2 / 5; }
-        #bridge_imgScenario { grid-area: 2 / 1 / 3 / 5; }
-        #bridge_textHardware { grid-area: 3 / 1 / 4 / 5; }
-        #bridge_imgHardware { grid-area: 4 / 1 / 5 / 5; }
-        #bridge_imgHardwareDetail1 { grid-area: 5 / 1 / 6 / 5; }
-        #bridge_imgHardwareDetail2 { grid-area: 6 / 1 / 7 / 5; }
-        #bridge_textProto { grid-area: 7 / 1 / 8 / 5; }
-        #bridge_videoProto { grid-area: 8 / 1 / 9 / 5; }
-        #bridge_imgProtoScreens { grid-area: 9 / 1 / 10 / 5; }
-        #bridge_imgProtoDetail { grid-area: 10 / 1 / 11 / 3; }
+        /* Tablet Size - 768px
+        ---------------------------------------------------------------------- */
+        @media all and  (max-width: 768px) {
+            html{font-size: 14px;}
 
-
-
-
-
-
-    /* Capp ------  Project Grid #2
-    -------------------------------------*/
-
-    #capp_contentWrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(8, max-content);
-        grid-column-gap: 24px;
-        grid-row-gap: 24px;
+            .projectHeading{
+                margin: 50vh 4vw 0 4vw;
+            }
+            #openerImg_shoppingFriend{
+                background-position: 40% 60%;
+                background-size: 440vw;
+            }
+            .projectNote{
+                margin: 0;
+            }
         }
-        
-        #capp_textIntro { grid-area: 1 / 1 / 2 / 5; }
-        #capp_imgIntro { grid-area: 2 / 1 / 3 / 5; }
-        #capp_textArchitecture{ grid-area: 3 / 1 / 4 / 5; }
-        #capp_imgArchitecture { grid-area: 4 / 1 / 5 / 5; }
-        #capp_imgLofiScreens { grid-area: 5 / 1 / 6 / 5; }
-        #capp_textDesignSystem { grid-area: 6 / 1 / 7 / 5; }
-        #capp_imgDesignSystem { grid-area: 7 / 1 / 8 / 5; }
-        #capp_videoProto { grid-area: 8 / 1 / 9 / 5; }
+        /* Phone Size -480px
+        ---------------------------------------------------------------------- */
+        @media all and  (max-width: 480px) {
+            
+            .openerImg{
+                height: 60vh;
+            }
+            #openerImg_capp{
+                background-position: 70% 30%;
+            }
+            #openerImg_shoppingFriend{
+                background-position: 50% 50%;
+            }
+            .projectsNav{
+                margin-top: 12vw;
+            }
+
+            .projectHeading{
+                margin-top: 3vh;
+                position: relative;
+                gap: 8px;
+            }
+            .starterIcon{
+                display: none;
+            }
+            .projectNote{
+                margin: 4vh 0;
+            }
+            
+            #bridge_contentWrapper div{
+                margin: 5vh 0 0 0 !important;
+            }
+            #capp_contentWrapper div{
+                margin: 5vh 0 0 0 !important;
+            }
+            #shoppingFriend_contentWrapper div{
+                margin: 5vh 0 0 0 !important;
+            }
+
+            /* Bridge ------  Project Grid #1
+            -------------------------------------*/
+            #bridge_contentWrapper {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(8, max-content);
+                grid-column-gap: 24px;
+                grid-row-gap: 24px;
+                }
+                
+            #bridge_textScenario { grid-area: 1 / 1 / 2 / 5; }
+            #bridge_imgScenario { grid-area: 2 / 1 / 3 / 5; }
+            #bridge_textHardware { grid-area: 3 / 1 / 4 / 5; }
+            #bridge_imgHardware { grid-area: 4 / 1 / 5 / 5; }
+            #bridge_imgHardwareDetail1 { grid-area: 5 / 1 / 6 / 5; }
+            #bridge_imgHardwareDetail2 { grid-area: 6 / 1 / 7 / 5; }
+            #bridge_textProto { grid-area: 7 / 1 / 8 / 5; }
+            #bridge_videoProto { grid-area: 8 / 1 / 9 / 5; }
+            #bridge_imgProtoScreens { grid-area: 9 / 1 / 10 / 5; }
+            #bridge_imgProtoDetail { grid-area: 10 / 1 / 11 / 3; }
 
 
 
-    /* ShoppingFriend ------  Project Grid #3
-    -------------------------------------*/
-    #shoppingFriend_contentWrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(11, max-content);
-        grid-column-gap: 24px;
-        grid-row-gap: 24px;
+
+
+
+            /* Capp ------  Project Grid #2
+            -------------------------------------*/
+
+            #capp_contentWrapper {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(8, max-content);
+                grid-column-gap: 24px;
+                grid-row-gap: 24px;
+                }
+                
+            #capp_textIntro { grid-area: 1 / 1 / 2 / 5; }
+            #capp_imgIntro { grid-area: 2 / 1 / 3 / 5; }
+            #capp_textArchitecture{ grid-area: 3 / 1 / 4 / 5; }
+            #capp_imgArchitecture { grid-area: 4 / 1 / 5 / 5; }
+            #capp_imgLofiScreens { grid-area: 5 / 1 / 6 / 5; }
+            #capp_textDesignSystem { grid-area: 6 / 1 / 7 / 5; }
+            #capp_imgDesignSystem { grid-area: 7 / 1 / 8 / 5; }
+            #capp_videoProto { grid-area: 8 / 1 / 9 / 5; }
+
+
+
+            /* ShoppingFriend ------  Project Grid #3
+            -------------------------------------*/
+            #shoppingFriend_contentWrapper {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(11, max-content);
+                grid-column-gap: 24px;
+                grid-row-gap: 24px;
+                }
+
+            #shoppingFriend_textScenario { grid-area: 1 / 1 / 2 / 5; }
+            #shoppingFriend_imgScenario { grid-area: 2 / 1 / 3 / 5; }
+            #shoppingFriend_textResearch { grid-area: 3 / 1 / 4 / 5; margin: 0;}
+            #shoppingFriend_imgResearchInsights { grid-area: 4 / 1 / 5 / 5; }
+            #shoppingFriend_imgResearchDiagram { grid-area: 5 / 1 / 6 / 5; margin: -10vh 0 0 0 ; }
+            #shoppingFriend_imgPersonas { grid-area: 7 / 1 / 8 / 5; margin: 0 8vw; }
+            #shoppingFriend_textPersonas { grid-area: 6 / 1 / 7 / 5; }
+            #shoppingFriend_textVision { grid-area: 8 / 1 / 9 / 5;}
+            #shoppingFriend_imgFlowchart { grid-area: 9 / 1 / 10 / 5; }
+            #shoppingFriend_imgDevice{ grid-area: 10 / 1 / 11 / 3; margin: -20vh 0vw 2vh 0vw;}
+            #shoppingFriend_imgStoryboard { grid-area: 11 / 1 / 12 / 5;  margin-left: 0vw; display: none;}
+
         }
-
-        #shoppingFriend_textScenario { grid-area: 1 / 1 / 2 / 5; }
-        #shoppingFriend_imgScenario { grid-area: 2 / 1 / 3 / 5; }
-        #shoppingFriend_textResearch { grid-area: 3 / 1 / 4 / 5; margin: 0;}
-        #shoppingFriend_imgResearchInsights { grid-area: 4 / 1 / 5 / 5; }
-        #shoppingFriend_imgResearchDiagram { grid-area: 5 / 1 / 6 / 5; margin: -10vh 0 0 0 ; }
-        #shoppingFriend_imgPersonas { grid-area: 7 / 1 / 8 / 5; margin: 0 8vw; }
-        #shoppingFriend_textPersonas { grid-area: 6 / 1 / 7 / 5; }
-        #shoppingFriend_textVision { grid-area: 8 / 1 / 9 / 5;}
-        #shoppingFriend_imgFlowchart { grid-area: 9 / 1 / 10 / 5; }
-        #shoppingFriend_imgDevice{ grid-area: 10 / 1 / 11 / 3; margin: -20vh 0vw 2vh 0vw;}
-        #shoppingFriend_imgStoryboard { grid-area: 11 / 1 / 12 / 5;  margin-left: 0vw; display: none;}
-
- }
