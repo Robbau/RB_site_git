@@ -158,7 +158,7 @@ body{
 #navTop{
     top: 0;
     width: 100%;
-    margin: 6vw 6vw;
+    margin: 3.5vw 6vw;
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
@@ -198,7 +198,7 @@ body{
 #openerParent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 60vh max-content max-content;
+    grid-template-rows: 65vh max-content max-content;
     grid-column-gap: 24px;
     grid-row-gap: 80px;
     /* max-width:1600px; */
@@ -217,11 +217,10 @@ body{
 #openerMessageGrid { 
     display: grid;
     grid-template-columns: repeat(6, max-content);
-    grid-template-rows: 1fr 1fr 1.8fr;
-    grid-column-gap: 0px;
+    grid-template-rows: 1fr 1fr 1.6fr;
+    grid-column-gap: 8px;
     grid-row-gap: 0px;
     align-items: center;
-    gap: 16px
 }
 #openerMessageGrid div{
     white-space: nowrap;
@@ -650,6 +649,9 @@ body{
             }
             #header{
                 margin: 0;
+            }
+            #navTop{
+                margin: 6vw 6vw;
             }
         /* Opener
         ------------------------------*/
