@@ -201,7 +201,6 @@ body{
     grid-template-rows: 100vh max-content max-content;
     grid-column-gap: 24px;
     grid-row-gap: 80px;
-    /* max-width:1600px; */
     width: 100%;
     top: 0;
     left: 0;
@@ -274,22 +273,6 @@ body{
             grid-area: 4 / 1 / 6 / 5;
             margin: 10vw 4vw 4vw 4vw;
         }
-
-
-    /* #openerGraphic { 
-        grid-area: 3 / 5 / 5 / 7;
-        margin: 0 100px 0 0 ;
-    }
-    #openerGraphic img{
-        margin: 30vh 0 0 0;
-    } */
-/* .openerMessageLine{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    justify-content: flex-start;
-} */
 
 
 /* Opener - Buttons
@@ -389,10 +372,6 @@ body{
 
 
 
-
-
-
-
 /* Project Section 
 ----------------------------------------------------------*/
 
@@ -434,33 +413,6 @@ body{
 
 /* Content
 ----------------------------------------------------------*/
-
-
-/* #contentWrapper{
-    padding-top: 40vh;
-} */
-
-
-/* .sliderContent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    background-color: #F2F2F2;
-    top: 0;
-    max-height: 0;
-    overflow: hidden;
-    width: 100vw;
-    margin: 0;
-    transition: max-height 0.2s ease-out;
-    z-index: 0;
-}
-.sliderContent div {
-    margin: 16px;
-}
-.sliderContent img{
-    margin: 12px 0 12px 0;
-} */
 
 
 /* Media Query - Small Screens - 1024px
@@ -522,7 +474,6 @@ body{
             }
             #openerPhoto{
                 grid-area: 2 / 1 / 4 / 7; 
-
             }
             #carousel{
                 padding: 0 5vw 0 10vw;
@@ -530,7 +481,6 @@ body{
             }
             .carouselPhoto{
                 width: 60vw;
-                /* min-width: 350px; */
             }
         /* Closer   
         ------------------------------*/
@@ -700,7 +650,7 @@ body{
             }
             #carousel{
                 padding: 0 0 0 5vw;
-                width: 250vw;
+                width: 340vw;
             }
 
         /* Projects
